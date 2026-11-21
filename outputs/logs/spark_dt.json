@@ -1,0 +1,156 @@
+{
+  "spark_metrics": {
+    "accuracy": 0.8194,
+    "f1": 0.8188,
+    "weightedPrecision": 0.8185,
+    "weightedRecall": 0.8194
+  },
+  "sk_metrics": {
+    "accuracy": 0.8085,
+    "f1": 0.8084
+  },
+  "depth": 8,
+  "nodes": 137,
+  "importance": {
+    "Pressure": 0.7789,
+    "Latitude": 0.1242,
+    "Longitude": 0.0542,
+    "HoursSinceGenesis": 0.0217,
+    "Month": 0.0081,
+    "dPressure6h": 0.0072,
+    "Heading": 0.0048,
+    "Speed_kmh": 0.0009,
+    "BasinCode": 0.0
+  },
+  "bench": [
+    {
+      "scale": 1,
+      "rows": 17606,
+      "sklearn_s": 0.09,
+      "spark_s": 2.16,
+      "speedup": 0.04
+    },
+    {
+      "scale": 5,
+      "rows": 88030,
+      "sklearn_s": 0.28,
+      "spark_s": 2.02,
+      "speedup": 0.14
+    },
+    {
+      "scale": 10,
+      "rows": 176060,
+      "sklearn_s": 0.5,
+      "spark_s": 2.11,
+      "speedup": 0.24
+    },
+    {
+      "scale": 25,
+      "rows": 440150,
+      "sklearn_s": 1.55,
+      "spark_s": 2.69,
+      "speedup": 0.58
+    },
+    {
+      "scale": 50,
+      "rows": 880300,
+      "sklearn_s": 2.44,
+      "spark_s": 3.34,
+      "speedup": 0.73
+    },
+    {
+      "scale": 100,
+      "rows": 1760600,
+      "sklearn_s": 5.24,
+      "spark_s": 4.95,
+      "speedup": 1.06
+    }
+  ],
+  "core_scaling": [
+    {
+      "cores": 1,
+      "seconds": 11.31
+    },
+    {
+      "cores": 2,
+      "seconds": 7.32
+    },
+    {
+      "cores": 4,
+      "seconds": 4.95
+    },
+    {
+      "cores": 8,
+      "seconds": 5.99
+    }
+  ],
+  "cores": 8,
+  "cm": [
+    [
+      1397,
+      303,
+      2,
+      35
+    ],
+    [
+      340,
+      2461,
+      177,
+      103
+    ],
+    [
+      0,
+      172,
+      2165,
+      37
+    ],
+    [
+      47,
+      158,
+      27,
+      335
+    ]
+  ],
+  "rules_head": [
+    "DecisionTreeClassificationModel: uid=DecisionTreeClassifier_5295496a821d, depth=8, numNodes=137, numClasses=4, numFeatures=9",
+    "  If (Pressure <= 989.5)",
+    "   If (Latitude <= 43.55)",
+    "    If (Pressure <= 987.5)",
+    "     If (Pressure <= 979.5)",
+    "      Predict: HU",
+    "     Else (Pressure > 979.5)",
+    "      If (Latitude <= 20.55)",
+    "       Predict: HU",
+    "      Else (Latitude > 20.55)",
+    "       If (Longitude <= -36.75)",
+    "        Predict: HU",
+    "       Else (Longitude > -36.75)",
+    "        If (HoursSinceGenesis <= 229.25)",
+    "         Predict: HU",
+    "        Else (HoursSinceGenesis > 229.25)",
+    "         Predict: TS",
+    "    Else (Pressure > 987.5)",
+    "     If (Latitude <= 18.25)",
+    "      If (Speed_kmh <= 20.397885170366635)",
+    "       If (HoursSinceGenesis <= 84.75)",
+    "        If (Latitude <= 14.850000000000001)",
+    "         Predict: HU",
+    "        Else (Latitude > 14.850000000000001)",
+    "         Predict: TS",
+    "       Else (HoursSinceGenesis > 84.75)",
+    "        Predict: HU",
+    "      Else (Speed_kmh > 20.397885170366635)",
+    "       Predict: HU",
+    "     Else (Latitude > 18.25)",
+    "      If (Longitude <= -72.65)",
+    "       If (Latitude <= 20.55)",
+    "        Predict: TS",
+    "       Else (Latitude > 20.55)",
+    "        If (HoursSinceGenesis <= 120.5)",
+    "         If (HoursSinceGenesis <= 66.5)",
+    "          Predict: TS",
+    "         Else (HoursSinceGenesis > 66.5)",
+    "          Predict: HU",
+    "        Else (HoursSinceGenesis > 120.5)"
+  ]
+}

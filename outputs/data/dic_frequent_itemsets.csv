@@ -1,0 +1,567 @@
+itemset,size,support_count,support
+{Basin=Atlantic},1,48761,0.6511
+{Motion=Westward},1,48659,0.6497
+{Season=Aug-Sep},1,42722,0.5704
+{Speed=Medium(15-30)},1,34478,0.4604
+{Lat=15-25N},1,32191,0.4298
+{Status=TS},1,27876,0.3722
+{Era=1950-1989},1,27603,0.3686
+{Speed=Slow(<15)},1,26683,0.3563
+{Basin=Pacific},1,26134,0.3489
+{Era=1990-2015},1,25332,0.3382
+{Era=1851-1949},1,21960,0.2932
+{Status=HU},1,21307,0.2845
+{Motion=Eastward},1,20891,0.2789
+{Lat=25-35N},1,18554,0.2477
+{Season=Oct-Dec},1,17061,0.2278
+{Pressure=>=1000},1,16910,0.2258
+{Status=TD},1,16517,0.2205
+{Season=Jan-Jul},1,15112,0.2018
+{Lat=<15N},1,14084,0.188
+{Speed=Fast(>30)},1,10889,0.1454
+{Lat=>=35N},1,10066,0.1344
+{Pressure=980-999},1,8964,0.1197
+{Pressure=<980},1,5891,0.0787
+{Status=EX},1,5064,0.0676
+"{Basin=Atlantic, Season=Aug-Sep}",2,29585,0.395
+"{Motion=Westward, Season=Aug-Sep}",2,29432,0.393
+"{Lat=15-25N, Motion=Westward}",2,26865,0.3587
+"{Basin=Atlantic, Motion=Westward}",2,26583,0.3549
+"{Motion=Westward, Speed=Medium(15-30)}",2,26407,0.3526
+"{Basin=Pacific, Motion=Westward}",2,22076,0.2948
+"{Basin=Atlantic, Era=1851-1949}",2,21878,0.2921
+"{Basin=Atlantic, Speed=Medium(15-30)}",2,21740,0.2903
+"{Season=Aug-Sep, Speed=Medium(15-30)}",2,20765,0.2773
+"{Motion=Westward, Status=TS}",2,19500,0.2604
+"{Era=1950-1989, Motion=Westward}",2,18874,0.252
+"{Lat=15-25N, Season=Aug-Sep}",2,18618,0.2486
+"{Basin=Atlantic, Motion=Eastward}",2,18584,0.2481
+"{Motion=Westward, Speed=Slow(<15)}",2,18264,0.2439
+"{Era=1990-2015, Motion=Westward}",2,17896,0.2389
+"{Basin=Atlantic, Status=TS}",2,17802,0.2377
+"{Basin=Atlantic, Lat=25-35N}",2,17233,0.2301
+"{Basin=Atlantic, Lat=15-25N}",2,16366,0.2185
+"{Lat=15-25N, Speed=Medium(15-30)}",2,16159,0.2158
+"{Era=1950-1989, Season=Aug-Sep}",2,15828,0.2113
+"{Basin=Pacific, Lat=15-25N}",2,15825,0.2113
+"{Basin=Atlantic, Speed=Slow(<15)}",2,15614,0.2085
+"{Season=Aug-Sep, Status=TS}",2,15334,0.2047
+"{Basin=Atlantic, Era=1950-1989}",2,14945,0.1995
+"{Motion=Westward, Status=HU}",2,14746,0.1969
+"{Basin=Atlantic, Status=HU}",2,14535,0.1941
+"{Season=Aug-Sep, Speed=Slow(<15)}",2,13893,0.1855
+"{Season=Aug-Sep, Status=HU}",2,13868,0.1852
+"{Era=1990-2015, Season=Aug-Sep}",2,13845,0.1849
+"{Era=1990-2015, Pressure=>=1000}",2,13674,0.1826
+"{Basin=Pacific, Era=1990-2015}",2,13394,0.1788
+"{Speed=Medium(15-30), Status=TS}",2,13355,0.1783
+"{Basin=Pacific, Season=Aug-Sep}",2,13137,0.1754
+"{Era=1851-1949, Season=Aug-Sep}",2,13049,0.1742
+"{Lat=15-25N, Status=TS}",2,13027,0.1739
+"{Era=1950-1989, Speed=Medium(15-30)}",2,12969,0.1732
+"{Lat=15-25N, Speed=Slow(<15)}",2,12951,0.1729
+"{Era=1950-1989, Lat=15-25N}",2,12770,0.1705
+"{Basin=Atlantic, Season=Oct-Dec}",2,12759,0.1704
+"{Basin=Pacific, Speed=Medium(15-30)}",2,12738,0.1701
+"{Basin=Pacific, Era=1950-1989}",2,12658,0.169
+"{Basin=Atlantic, Era=1990-2015}",2,11938,0.1594
+"{Lat=<15N, Motion=Westward}",2,11933,0.1593
+"{Era=1990-2015, Lat=15-25N}",2,11893,0.1588
+"{Era=1851-1949, Motion=Westward}",2,11889,0.1587
+"{Motion=Westward, Pressure=>=1000}",2,11711,0.1564
+"{Era=1990-2015, Speed=Medium(15-30)}",2,11326,0.1512
+"{Motion=Westward, Status=TD}",2,11210,0.1497
+"{Speed=Medium(15-30), Status=HU}",2,11108,0.1483
+"{Basin=Pacific, Speed=Slow(<15)}",2,11069,0.1478
+"{Motion=Westward, Season=Jan-Jul}",2,10757,0.1436
+"{Lat=25-35N, Season=Aug-Sep}",2,10654,0.1423
+"{Speed=Slow(<15), Status=TS}",2,10646,0.1421
+"{Motion=Eastward, Season=Aug-Sep}",2,10515,0.1404
+"{Era=1851-1949, Speed=Medium(15-30)}",2,10183,0.136
+"{Lat=15-25N, Status=HU}",2,10078,0.1346
+"{Basin=Pacific, Status=TS}",2,10074,0.1345
+"{Basin=Atlantic, Lat=>=35N}",2,9935,0.1327
+"{Era=1990-2015, Speed=Slow(<15)}",2,9900,0.1322
+"{Era=1851-1949, Status=TS}",2,9758,0.1303
+"{Era=1950-1989, Speed=Slow(<15)}",2,9732,0.1299
+"{Basin=Atlantic, Speed=Fast(>30)}",2,9612,0.1283
+"{Basin=Atlantic, Status=TD}",2,9553,0.1276
+"{Era=1950-1989, Status=TS}",2,9479,0.1266
+"{Pressure=>=1000, Season=Aug-Sep}",2,9289,0.124
+"{Basin=Atlantic, Pressure=>=1000}",2,8937,0.1193
+"{Season=Aug-Sep, Status=TD}",2,8895,0.1188
+"{Basin=Pacific, Lat=<15N}",2,8857,0.1183
+"{Lat=25-35N, Motion=Westward}",2,8809,0.1176
+"{Era=1950-1989, Status=TD}",2,8766,0.117
+"{Basin=Pacific, Season=Jan-Jul}",2,8695,0.1161
+"{Lat=>=35N, Motion=Eastward}",2,8678,0.1159
+"{Era=1990-2015, Status=TS}",2,8639,0.1153
+"{Era=1851-1949, Motion=Eastward}",2,8495,0.1134
+"{Motion=Westward, Season=Oct-Dec}",2,8470,0.1131
+"{Lat=25-35N, Motion=Eastward}",2,8281,0.1106
+"{Lat=25-35N, Speed=Medium(15-30)}",2,8187,0.1093
+"{Era=1851-1949, Lat=25-35N}",2,8118,0.1084
+"{Era=1851-1949, Status=HU}",2,7983,0.1066
+"{Basin=Pacific, Pressure=>=1000}",2,7973,0.1065
+"{Lat=25-35N, Speed=Slow(<15)}",2,7693,0.1027
+"{Lat=15-25N, Pressure=>=1000}",2,7576,0.1012
+"{Motion=Eastward, Speed=Medium(15-30)}",2,7529,0.1005
+"{Era=1851-1949, Lat=15-25N}",2,7528,0.1005
+"{Era=1950-1989, Status=HU}",2,7313,0.0976
+"{Motion=Eastward, Season=Oct-Dec}",2,7208,0.0962
+"{Lat=15-25N, Status=TD}",2,7193,0.096
+"{Pressure=>=1000, Speed=Medium(15-30)}",2,7179,0.0959
+"{Season=Oct-Dec, Speed=Slow(<15)}",2,7109,0.0949
+"{Lat=<15N, Season=Aug-Sep}",2,7074,0.0945
+"{Speed=Slow(<15), Status=HU}",2,7068,0.0944
+"{Season=Jan-Jul, Speed=Medium(15-30)}",2,7044,0.0941
+"{Era=1851-1949, Speed=Slow(<15)}",2,7051,0.0941
+"{Speed=Medium(15-30), Status=TD}",2,6985,0.0933
+"{Basin=Pacific, Status=TD}",2,6964,0.093
+"{Lat=<15N, Speed=Medium(15-30)}",2,6960,0.0929
+"{Lat=25-35N, Status=TS}",2,6915,0.0923
+"{Lat=15-25N, Season=Oct-Dec}",2,6863,0.0916
+"{Motion=Eastward, Speed=Fast(>30)}",2,6814,0.091
+"{Pressure=>=1000, Speed=Slow(<15)}",2,6779,0.0905
+"{Basin=Pacific, Status=HU}",2,6772,0.0904
+"{Motion=Eastward, Status=TS}",2,6736,0.0899
+"{Lat=15-25N, Season=Jan-Jul}",2,6710,0.0896
+"{Era=1950-1989, Motion=Eastward}",2,6693,0.0894
+"{Season=Oct-Dec, Speed=Medium(15-30)}",2,6669,0.089
+"{Era=1950-1989, Season=Jan-Jul}",2,6555,0.0875
+"{Season=Aug-Sep, Speed=Fast(>30)}",2,6554,0.0875
+"{Season=Oct-Dec, Status=TS}",2,6552,0.0875
+"{Motion=Eastward, Speed=Slow(<15)}",2,6548,0.0874
+"{Pressure=>=1000, Status=TD}",2,6491,0.0867
+"{Era=1990-2015, Pressure=980-999}",2,6471,0.0864
+"{Basin=Atlantic, Season=Jan-Jul}",2,6417,0.0857
+"{Era=1851-1949, Season=Oct-Dec}",2,6418,0.0857
+"{Lat=>=35N, Season=Aug-Sep}",2,6376,0.0851
+"{Speed=Slow(<15), Status=TD}",2,6301,0.0841
+"{Era=1990-2015, Lat=<15N}",2,6235,0.0832
+"{Lat=25-35N, Status=HU}",2,6209,0.0829
+"{Era=1990-2015, Season=Jan-Jul}",2,6064,0.081
+"{Pressure=>=1000, Status=TS}",2,6068,0.081
+"{Era=1990-2015, Status=HU}",2,6011,0.0803
+"{Season=Jan-Jul, Status=TS}",2,5990,0.08
+"{Era=1950-1989, Lat=<15N}",2,5989,0.08
+"{Era=1950-1989, Lat=25-35N}",2,5782,0.0772
+"{Basin=Atlantic, Pressure=980-999}",2,5757,0.0769
+"{Era=1990-2015, Status=TD}",2,5750,0.0768
+"{Motion=Eastward, Status=HU}",2,5732,0.0765
+"{Era=1990-2015, Motion=Eastward}",2,5703,0.0761
+"{Season=Jan-Jul, Speed=Slow(<15)}",2,5681,0.0759
+"{Lat=<15N, Status=TS}",2,5676,0.0758
+"{Pressure=<980, Status=HU}",2,5540,0.074
+"{Motion=Westward, Pressure=980-999}",2,5445,0.0727
+"{Era=1990-2015, Season=Oct-Dec}",2,5423,0.0724
+"{Lat=>=35N, Speed=Fast(>30)}",2,5243,0.07
+"{Basin=Atlantic, Lat=<15N}",2,5227,0.0698
+"{Era=1950-1989, Season=Oct-Dec}",2,5220,0.0697
+"{Lat=<15N, Status=TD}",2,5139,0.0686
+"{Pressure=980-999, Season=Aug-Sep}",2,5022,0.0671
+"{Lat=25-35N, Season=Oct-Dec}",2,4846,0.0647
+"{Basin=Atlantic, Status=EX}",2,4796,0.064
+"{Pressure=980-999, Status=TS}",2,4688,0.0626
+"{Era=1990-2015, Lat=25-35N}",2,4654,0.0621
+"{Lat=<15N, Pressure=>=1000}",2,4498,0.0601
+"{Era=1851-1949, Lat=>=35N}",2,4454,0.0595
+"{Season=Oct-Dec, Status=HU}",2,4457,0.0595
+"{Season=Jan-Jul, Status=TD}",2,4451,0.0594
+"{Lat=<15N, Speed=Slow(<15)}",2,4444,0.0593
+"{Motion=Eastward, Status=EX}",2,4352,0.0581
+"{Basin=Pacific, Season=Oct-Dec}",2,4302,0.0574
+"{Pressure=>=1000, Season=Jan-Jul}",2,4236,0.0566
+"{Motion=Westward, Pressure=<980}",2,4181,0.0558
+"{Lat=>=35N, Status=EX}",2,4168,0.0557
+"{Lat=<15N, Season=Jan-Jul}",2,4159,0.0555
+"{Era=1990-2015, Pressure=<980}",2,4110,0.0549
+"{Pressure=<980, Season=Aug-Sep}",2,3994,0.0533
+"{Motion=Westward, Speed=Fast(>30)}",2,3988,0.0532
+"{Era=1851-1949, Speed=Fast(>30)}",2,3914,0.0523
+"{Pressure=980-999, Speed=Medium(15-30)}",2,3911,0.0522
+"{Era=1950-1989, Speed=Fast(>30)}",2,3761,0.0502
+"{Basin=Atlantic, Motion=Westward, Season=Aug-Sep}",3,18056,0.2411
+"{Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",3,16791,0.2242
+"{Lat=15-25N, Motion=Westward, Season=Aug-Sep}",3,16647,0.2223
+"{Lat=15-25N, Motion=Westward, Speed=Medium(15-30)}",3,14928,0.1993
+"{Basin=Atlantic, Motion=Westward, Speed=Medium(15-30)}",3,14372,0.1919
+"{Basin=Atlantic, Season=Aug-Sep, Speed=Medium(15-30)}",3,14124,0.1886
+"{Basin=Pacific, Lat=15-25N, Motion=Westward}",3,13713,0.1831
+"{Basin=Atlantic, Lat=15-25N, Motion=Westward}",3,13152,0.1756
+"{Basin=Atlantic, Era=1851-1949, Season=Aug-Sep}",3,12999,0.1736
+"{Basin=Pacific, Motion=Westward, Speed=Medium(15-30)}",3,12035,0.1607
+"{Basin=Atlantic, Era=1851-1949, Motion=Westward}",3,11826,0.1579
+"{Motion=Westward, Season=Aug-Sep, Status=TS}",3,11415,0.1524
+"{Basin=Pacific, Motion=Westward, Season=Aug-Sep}",3,11376,0.1519
+"{Era=1950-1989, Motion=Westward, Season=Aug-Sep}",3,11309,0.151
+"{Basin=Pacific, Era=1990-2015, Motion=Westward}",3,11227,0.1499
+"{Lat=15-25N, Motion=Westward, Status=TS}",3,10911,0.1457
+"{Era=1950-1989, Lat=15-25N, Motion=Westward}",3,10801,0.1442
+"{Basin=Pacific, Era=1950-1989, Motion=Westward}",3,10786,0.144
+"{Basin=Atlantic, Motion=Westward, Status=TS}",3,10650,0.1422
+"{Motion=Westward, Speed=Medium(15-30), Status=TS}",3,10551,0.1409
+"{Era=1950-1989, Motion=Westward, Speed=Medium(15-30)}",3,10343,0.1381
+"{Basin=Atlantic, Season=Aug-Sep, Status=HU}",3,10336,0.138
+"{Era=1990-2015, Motion=Westward, Season=Aug-Sep}",3,10281,0.1373
+"{Basin=Atlantic, Season=Aug-Sep, Status=TS}",3,10200,0.1362
+"{Basin=Atlantic, Era=1851-1949, Speed=Medium(15-30)}",3,10154,0.1356
+"{Basin=Atlantic, Lat=15-25N, Season=Aug-Sep}",3,10148,0.1355
+"{Lat=15-25N, Season=Aug-Sep, Speed=Medium(15-30)}",3,10106,0.1349
+"{Lat=15-25N, Motion=Westward, Speed=Slow(<15)}",3,10068,0.1344
+"{Motion=Westward, Season=Aug-Sep, Status=HU}",3,10044,0.1341
+"{Era=1990-2015, Lat=15-25N, Motion=Westward}",3,10030,0.1339
+"{Motion=Westward, Season=Aug-Sep, Speed=Slow(<15)}",3,9938,0.1327
+"{Era=1990-2015, Motion=Westward, Pressure=>=1000}",3,9746,0.1301
+"{Basin=Atlantic, Era=1851-1949, Status=TS}",3,9689,0.1294
+"{Basin=Atlantic, Lat=25-35N, Season=Aug-Sep}",3,9657,0.1289
+"{Basin=Atlantic, Motion=Eastward, Season=Aug-Sep}",3,9541,0.1274
+"{Era=1990-2015, Motion=Westward, Speed=Medium(15-30)}",3,9437,0.126
+"{Basin=Atlantic, Era=1950-1989, Season=Aug-Sep}",3,9391,0.1254
+"{Basin=Atlantic, Motion=Westward, Speed=Slow(<15)}",3,9306,0.1243
+"{Basin=Pacific, Motion=Westward, Speed=Slow(<15)}",3,8958,0.1196
+"{Lat=15-25N, Motion=Westward, Status=HU}",3,8891,0.1187
+"{Basin=Pacific, Motion=Westward, Status=TS}",3,8850,0.1182
+"{Motion=Westward, Speed=Medium(15-30), Status=HU}",3,8671,0.1158
+"{Basin=Atlantic, Motion=Westward, Status=HU}",3,8587,0.1147
+"{Basin=Atlantic, Lat=>=35N, Motion=Eastward}",3,8581,0.1146
+"{Basin=Atlantic, Season=Aug-Sep, Speed=Slow(<15)}",3,8519,0.1137
+"{Basin=Atlantic, Era=1851-1949, Motion=Eastward}",3,8490,0.1134
+"{Basin=Pacific, Lat=15-25N, Season=Aug-Sep}",3,8470,0.1131
+"{Basin=Atlantic, Lat=15-25N, Speed=Medium(15-30)}",3,8403,0.1122
+"{Basin=Atlantic, Speed=Medium(15-30), Status=TS}",3,8220,0.1098
+"{Basin=Atlantic, Era=1851-1949, Lat=25-35N}",3,8108,0.1083
+"{Basin=Atlantic, Era=1950-1989, Motion=Westward}",3,8088,0.108
+"{Basin=Atlantic, Era=1851-1949, Status=HU}",3,7972,0.1064
+"{Basin=Atlantic, Lat=25-35N, Motion=Westward}",3,7960,0.1063
+"{Basin=Atlantic, Lat=25-35N, Motion=Eastward}",3,7901,0.1055
+"{Basin=Pacific, Era=1950-1989, Lat=15-25N}",3,7889,0.1053
+"{Basin=Pacific, Era=1990-2015, Lat=15-25N}",3,7866,0.105
+"{Era=1851-1949, Motion=Westward, Season=Aug-Sep}",3,7842,0.1047
+"{Basin=Pacific, Lat=15-25N, Speed=Medium(15-30)}",3,7756,0.1036
+"{Era=1950-1989, Season=Aug-Sep, Speed=Medium(15-30)}",3,7754,0.1035
+"{Season=Aug-Sep, Speed=Medium(15-30), Status=TS}",3,7736,0.1033
+"{Basin=Atlantic, Lat=25-35N, Speed=Medium(15-30)}",3,7604,0.1015
+"{Basin=Pacific, Motion=Westward, Season=Jan-Jul}",3,7590,0.1013
+"{Season=Aug-Sep, Speed=Medium(15-30), Status=HU}",3,7500,0.1001
+"{Basin=Pacific, Lat=<15N, Motion=Westward}",3,7485,0.0999
+"{Basin=Atlantic, Era=1851-1949, Lat=15-25N}",3,7458,0.0996
+"{Basin=Pacific, Era=1990-2015, Pressure=>=1000}",3,7460,0.0996
+"{Era=1950-1989, Lat=15-25N, Season=Aug-Sep}",3,7434,0.0993
+"{Lat=15-25N, Season=Aug-Sep, Status=TS}",3,7369,0.0984
+"{Motion=Westward, Speed=Slow(<15), Status=TS}",3,7363,0.0983
+"{Basin=Atlantic, Speed=Medium(15-30), Status=HU}",3,7273,0.0971
+"{Basin=Atlantic, Era=1990-2015, Season=Aug-Sep}",3,7195,0.0961
+"{Era=1990-2015, Pressure=>=1000, Season=Aug-Sep}",3,7133,0.0952
+"{Basin=Atlantic, Lat=25-35N, Speed=Slow(<15)}",3,7118,0.095
+"{Basin=Pacific, Lat=15-25N, Speed=Slow(<15)}",3,7112,0.095
+"{Era=1950-1989, Motion=Westward, Status=TS}",3,7097,0.0948
+"{Basin=Atlantic, Era=1851-1949, Speed=Slow(<15)}",3,7005,0.0935
+"{Era=1990-2015, Motion=Westward, Speed=Slow(<15)}",3,7002,0.0935
+"{Basin=Atlantic, Motion=Eastward, Speed=Medium(15-30)}",3,6909,0.0922
+"{Era=1950-1989, Motion=Westward, Speed=Slow(<15)}",3,6878,0.0918
+"{Lat=<15N, Motion=Westward, Speed=Medium(15-30)}",3,6862,0.0916
+"{Basin=Atlantic, Lat=15-25N, Status=TS}",3,6834,0.0912
+"{Motion=Westward, Pressure=>=1000, Season=Aug-Sep}",3,6767,0.0904
+"{Era=1990-2015, Lat=15-25N, Season=Aug-Sep}",3,6693,0.0894
+"{Basin=Atlantic, Era=1990-2015, Motion=Westward}",3,6669,0.089
+"{Basin=Pacific, Era=1990-2015, Season=Aug-Sep}",3,6650,0.0888
+"{Basin=Pacific, Season=Aug-Sep, Speed=Medium(15-30)}",3,6641,0.0887
+"{Era=1851-1949, Motion=Westward, Speed=Medium(15-30)}",3,6627,0.0885
+"{Lat=15-25N, Season=Aug-Sep, Speed=Slow(<15)}",3,6626,0.0885
+"{Basin=Atlantic, Motion=Eastward, Speed=Fast(>30)}",3,6626,0.0885
+"{Era=1990-2015, Season=Aug-Sep, Speed=Medium(15-30)}",3,6630,0.0885
+"{Era=1990-2015, Motion=Westward, Status=TS}",3,6586,0.0879
+"{Basin=Atlantic, Era=1950-1989, Speed=Medium(15-30)}",3,6562,0.0876
+"{Lat=15-25N, Speed=Medium(15-30), Status=TS}",3,6517,0.087
+"{Lat=15-25N, Season=Aug-Sep, Status=HU}",3,6505,0.0869
+"{Basin=Atlantic, Lat=25-35N, Status=TS}",3,6494,0.0867
+"{Era=1950-1989, Lat=15-25N, Speed=Medium(15-30)}",3,6477,0.0865
+"{Basin=Pacific, Era=1950-1989, Season=Aug-Sep}",3,6437,0.0859
+"{Basin=Atlantic, Era=1851-1949, Season=Oct-Dec}",3,6418,0.0857
+"{Basin=Pacific, Era=1950-1989, Speed=Medium(15-30)}",3,6407,0.0855
+"{Basin=Atlantic, Motion=Eastward, Season=Oct-Dec}",3,6394,0.0854
+"{Era=1851-1949, Season=Aug-Sep, Speed=Medium(15-30)}",3,6381,0.0852
+"{Basin=Pacific, Motion=Westward, Pressure=>=1000}",3,6372,0.0851
+"{Basin=Atlantic, Speed=Slow(<15), Status=TS}",3,6346,0.0847
+"{Motion=Westward, Season=Aug-Sep, Status=TD}",3,6325,0.0845
+"{Era=1990-2015, Lat=15-25N, Pressure=>=1000}",3,6322,0.0844
+"{Basin=Pacific, Era=1990-2015, Speed=Medium(15-30)}",3,6302,0.0841
+"{Lat=<15N, Motion=Westward, Season=Aug-Sep}",3,6275,0.0838
+"{Basin=Atlantic, Lat=>=35N, Season=Aug-Sep}",3,6249,0.0834
+"{Lat=15-25N, Motion=Westward, Pressure=>=1000}",3,6238,0.0833
+"{Basin=Atlantic, Era=1990-2015, Pressure=>=1000}",3,6214,0.083
+"{Basin=Pacific, Lat=15-25N, Status=TS}",3,6193,0.0827
+"{Basin=Pacific, Motion=Westward, Status=HU}",3,6159,0.0822
+"{Era=1950-1989, Motion=Westward, Status=TD}",3,6042,0.0807
+"{Era=1851-1949, Lat=15-25N, Motion=Westward}",3,6034,0.0806
+"{Basin=Atlantic, Lat=25-35N, Status=HU}",3,6003,0.0802
+"{Basin=Pacific, Era=1990-2015, Speed=Slow(<15)}",3,5964,0.0796
+"{Motion=Westward, Pressure=>=1000, Speed=Medium(15-30)}",3,5929,0.0792
+"{Basin=Atlantic, Motion=Eastward, Status=TS}",3,5916,0.079
+"{Basin=Atlantic, Season=Aug-Sep, Speed=Fast(>30)}",3,5909,0.0789
+"{Basin=Atlantic, Lat=15-25N, Speed=Slow(<15)}",3,5839,0.078
+"{Basin=Atlantic, Motion=Westward, Status=TD}",3,5836,0.0779
+"{Lat=25-35N, Motion=Westward, Season=Aug-Sep}",3,5824,0.0778
+"{Era=1851-1949, Motion=Westward, Status=TS}",3,5817,0.0777
+"{Motion=Westward, Season=Jan-Jul, Speed=Medium(15-30)}",3,5822,0.0777
+"{Lat=15-25N, Motion=Westward, Season=Jan-Jul}",3,5816,0.0777
+"{Lat=15-25N, Speed=Medium(15-30), Status=HU}",3,5786,0.0773
+"{Motion=Westward, Speed=Medium(15-30), Status=TD}",3,5768,0.077
+"{Era=1990-2015, Pressure=>=1000, Speed=Medium(15-30)}",3,5746,0.0767
+"{Era=1990-2015, Pressure=>=1000, Speed=Slow(<15)}",3,5704,0.0762
+"{Basin=Atlantic, Era=1950-1989, Motion=Eastward}",3,5699,0.0761
+"{Era=1990-2015, Lat=15-25N, Speed=Medium(15-30)}",3,5663,0.0756
+"{Basin=Atlantic, Season=Aug-Sep, Status=TD}",3,5615,0.075
+"{Lat=15-25N, Motion=Westward, Status=TD}",3,5595,0.0747
+"{Era=1851-1949, Season=Aug-Sep, Status=HU}",3,5562,0.0743
+"{Lat=>=35N, Motion=Eastward, Season=Aug-Sep}",3,5469,0.073
+"{Basin=Atlantic, Pressure=>=1000, Season=Aug-Sep}",3,5450,0.0728
+"{Basin=Pacific, Era=1950-1989, Status=TS}",3,5434,0.0726
+"{Basin=Pacific, Season=Aug-Sep, Speed=Slow(<15)}",3,5374,0.0718
+"{Basin=Pacific, Motion=Westward, Status=TD}",3,5374,0.0718
+"{Basin=Atlantic, Motion=Westward, Season=Oct-Dec}",3,5360,0.0716
+"{Era=1950-1989, Season=Aug-Sep, Status=TS}",3,5345,0.0714
+"{Lat=15-25N, Speed=Slow(<15), Status=TS}",3,5341,0.0713
+"{Basin=Atlantic, Era=1950-1989, Status=TD}",3,5342,0.0713
+"{Basin=Atlantic, Motion=Westward, Pressure=>=1000}",3,5339,0.0713
+"{Season=Aug-Sep, Speed=Slow(<15), Status=TS}",3,5329,0.0712
+"{Era=1950-1989, Motion=Westward, Status=HU}",3,5334,0.0712
+"{Basin=Atlantic, Motion=Eastward, Status=HU}",3,5325,0.0711
+"{Era=1851-1949, Season=Aug-Sep, Status=TS}",3,5303,0.0708
+"{Era=1990-2015, Lat=15-25N, Speed=Slow(<15)}",3,5293,0.0707
+"{Era=1990-2015, Lat=<15N, Motion=Westward}",3,5267,0.0703
+"{Basin=Atlantic, Era=1950-1989, Lat=25-35N}",3,5216,0.0696
+"{Basin=Atlantic, Lat=15-25N, Status=HU}",3,5208,0.0695
+"{Basin=Atlantic, Lat=>=35N, Speed=Fast(>30)}",3,5204,0.0695
+"{Basin=Pacific, Speed=Medium(15-30), Status=TS}",3,5135,0.0686
+"{Basin=Pacific, Season=Aug-Sep, Status=TS}",3,5134,0.0685
+"{Era=1950-1989, Lat=<15N, Motion=Westward}",3,5128,0.0685
+"{Motion=Westward, Speed=Slow(<15), Status=HU}",3,5081,0.0678
+"{Lat=<15N, Motion=Westward, Status=TS}",3,5071,0.0677
+"{Basin=Pacific, Era=1950-1989, Speed=Slow(<15)}",3,5059,0.0675
+"{Basin=Atlantic, Motion=Eastward, Speed=Slow(<15)}",3,5049,0.0674
+"{Lat=>=35N, Motion=Eastward, Speed=Fast(>30)}",3,5043,0.0673
+"{Era=1950-1989, Season=Aug-Sep, Speed=Slow(<15)}",3,5032,0.0672
+"{Basin=Atlantic, Era=1990-2015, Speed=Medium(15-30)}",3,5024,0.0671
+"{Era=1950-1989, Lat=15-25N, Speed=Slow(<15)}",3,5015,0.067
+"{Era=1990-2015, Pressure=>=1000, Status=TD}",3,5007,0.0669
+"{Basin=Atlantic, Season=Oct-Dec, Status=TS}",3,5010,0.0669
+"{Era=1990-2015, Season=Aug-Sep, Speed=Slow(<15)}",3,4998,0.0667
+"{Basin=Pacific, Lat=15-25N, Season=Jan-Jul}",3,4939,0.0659
+"{Basin=Atlantic, Season=Oct-Dec, Speed=Medium(15-30)}",3,4935,0.0659
+"{Era=1950-1989, Lat=15-25N, Status=TS}",3,4899,0.0654
+"{Basin=Atlantic, Era=1950-1989, Lat=15-25N}",3,4881,0.0652
+"{Basin=Atlantic, Season=Oct-Dec, Speed=Slow(<15)}",3,4866,0.065
+"{Basin=Pacific, Lat=15-25N, Status=HU}",3,4870,0.065
+"{Era=1950-1989, Season=Aug-Sep, Status=TD}",3,4827,0.0645
+"{Lat=25-35N, Season=Aug-Sep, Speed=Medium(15-30)}",3,4778,0.0638
+"{Era=1851-1949, Motion=Westward, Status=HU}",3,4769,0.0637
+"{Era=1950-1989, Motion=Westward, Season=Jan-Jul}",3,4765,0.0636
+"{Era=1990-2015, Pressure=>=1000, Status=TS}",3,4717,0.063
+"{Motion=Westward, Pressure=>=1000, Status=TS}",3,4716,0.063
+"{Era=1990-2015, Season=Aug-Sep, Status=TS}",3,4686,0.0626
+"{Basin=Pacific, Era=1990-2015, Lat=<15N}",3,4681,0.0625
+"{Basin=Atlantic, Era=1950-1989, Speed=Slow(<15)}",3,4673,0.0624
+"{Basin=Atlantic, Lat=25-35N, Season=Oct-Dec}",3,4677,0.0624
+"{Era=1851-1949, Speed=Medium(15-30), Status=TS}",3,4655,0.0622
+"{Era=1950-1989, Speed=Medium(15-30), Status=TS}",3,4644,0.062
+"{Era=1990-2015, Motion=Westward, Status=HU}",3,4643,0.062
+"{Motion=Westward, Pressure=>=1000, Speed=Slow(<15)}",3,4619,0.0617
+"{Lat=25-35N, Season=Aug-Sep, Speed=Slow(<15)}",3,4616,0.0616
+"{Era=1851-1949, Lat=25-35N, Season=Aug-Sep}",3,4574,0.0611
+"{Era=1950-1989, Season=Aug-Sep, Status=HU}",3,4568,0.061
+"{Basin=Pacific, Era=1990-2015, Status=TS}",3,4571,0.061
+"{Era=1990-2015, Motion=Westward, Season=Jan-Jul}",3,4558,0.0609
+"{Motion=Westward, Season=Jan-Jul, Status=TS}",3,4520,0.0604
+"{Era=1851-1949, Lat=15-25N, Season=Aug-Sep}",3,4491,0.06
+"{Basin=Atlantic, Speed=Slow(<15), Status=HU}",3,4495,0.06
+"{Basin=Pacific, Lat=15-25N, Pressure=>=1000}",3,4453,0.0595
+"{Basin=Atlantic, Era=1851-1949, Lat=>=35N}",3,4454,0.0595
+"{Basin=Atlantic, Lat=15-25N, Season=Oct-Dec}",3,4447,0.0594
+"{Basin=Atlantic, Lat=<15N, Motion=Westward}",3,4448,0.0594
+"{Motion=Westward, Pressure=>=1000, Status=TD}",3,4402,0.0588
+"{Lat=15-25N, Motion=Westward, Season=Oct-Dec}",3,4402,0.0588
+"{Basin=Pacific, Era=1950-1989, Season=Jan-Jul}",3,4399,0.0587
+"{Basin=Atlantic, Era=1990-2015, Motion=Eastward}",3,4395,0.0587
+"{Era=1851-1949, Motion=Westward, Speed=Slow(<15)}",3,4384,0.0585
+"{Motion=Westward, Speed=Slow(<15), Status=TD}",3,4373,0.0584
+"{Basin=Pacific, Season=Jan-Jul, Speed=Medium(15-30)}",3,4363,0.0583
+"{Basin=Pacific, Lat=<15N, Speed=Medium(15-30)}",3,4346,0.058
+"{Era=1851-1949, Motion=Eastward, Season=Aug-Sep}",3,4321,0.0577
+"{Basin=Pacific, Speed=Slow(<15), Status=TS}",3,4300,0.0574
+"{Era=1990-2015, Lat=15-25N, Status=TS}",3,4294,0.0573
+"{Lat=25-35N, Season=Aug-Sep, Status=HU}",3,4282,0.0572
+"{Basin=Pacific, Era=1990-2015, Season=Jan-Jul}",3,4264,0.0569
+"{Motion=Westward, Season=Oct-Dec, Speed=Slow(<15)}",3,4238,0.0566
+"{Season=Aug-Sep, Speed=Slow(<15), Status=HU}",3,4231,0.0565
+"{Lat=15-25N, Pressure=>=1000, Season=Aug-Sep}",3,4233,0.0565
+"{Era=1990-2015, Motion=Westward, Pressure=980-999}",3,4194,0.056
+"{Basin=Atlantic, Motion=Eastward, Status=EX}",3,4191,0.056
+"{Pressure=>=1000, Season=Aug-Sep, Speed=Medium(15-30)}",3,4186,0.0559
+"{Lat=25-35N, Motion=Westward, Speed=Medium(15-30)}",3,4171,0.0557
+"{Basin=Pacific, Era=1950-1989, Lat=<15N}",3,4174,0.0557
+"{Basin=Atlantic, Lat=>=35N, Status=EX}",3,4117,0.055
+"{Motion=Westward, Pressure=<980, Status=HU}",3,4115,0.0549
+"{Lat=25-35N, Motion=Westward, Speed=Slow(<15)}",3,4088,0.0546
+"{Motion=Westward, Season=Jan-Jul, Speed=Slow(<15)}",3,4088,0.0546
+"{Basin=Atlantic, Era=1990-2015, Status=TS}",3,4068,0.0543
+"{Era=1990-2015, Speed=Medium(15-30), Status=TS}",3,4056,0.0542
+"{Basin=Atlantic, Era=1950-1989, Status=TS}",3,4045,0.054
+"{Basin=Atlantic, Speed=Medium(15-30), Status=TD}",3,4039,0.0539
+"{Basin=Atlantic, Era=1990-2015, Lat=15-25N}",3,4027,0.0538
+"{Era=1990-2015, Motion=Westward, Status=TD}",3,4033,0.0538
+"{Era=1851-1949, Lat=15-25N, Speed=Medium(15-30)}",3,4019,0.0537
+"{Era=1851-1949, Speed=Medium(15-30), Status=HU}",3,4024,0.0537
+"{Season=Aug-Sep, Speed=Medium(15-30), Status=TD}",3,4005,0.0535
+"{Era=1990-2015, Lat=<15N, Pressure=>=1000}",3,3980,0.0531
+"{Lat=25-35N, Motion=Eastward, Season=Aug-Sep}",3,3972,0.053
+"{Basin=Atlantic, Era=1990-2015, Speed=Slow(<15)}",3,3936,0.0526
+"{Basin=Atlantic, Era=1851-1949, Speed=Fast(>30)}",3,3913,0.0522
+"{Basin=Atlantic, Era=1990-2015, Lat=25-35N}",3,3909,0.0522
+"{Era=1950-1989, Speed=Medium(15-30), Status=TD}",3,3885,0.0519
+"{Lat=<15N, Season=Aug-Sep, Speed=Medium(15-30)}",3,3885,0.0519
+"{Lat=<15N, Motion=Westward, Status=TD}",3,3882,0.0518
+"{Era=1851-1949, Lat=>=35N, Motion=Eastward}",3,3877,0.0518
+"{Era=1851-1949, Lat=25-35N, Motion=Westward}",3,3871,0.0517
+"{Era=1851-1949, Season=Aug-Sep, Speed=Slow(<15)}",3,3863,0.0516
+"{Era=1950-1989, Lat=15-25N, Status=TD}",3,3861,0.0516
+"{Lat=15-25N, Season=Aug-Sep, Status=TD}",3,3839,0.0513
+"{Basin=Pacific, Pressure=>=1000, Season=Aug-Sep}",3,3839,0.0513
+"{Era=1851-1949, Lat=15-25N, Status=TS}",3,3834,0.0512
+"{Basin=Pacific, Speed=Medium(15-30), Status=HU}",3,3835,0.0512
+"{Era=1990-2015, Pressure=<980, Status=HU}",3,3821,0.051
+"{Era=1950-1989, Lat=15-25N, Status=HU}",3,3805,0.0508
+"{Motion=Westward, Season=Oct-Dec, Speed=Medium(15-30)}",3,3794,0.0507
+"{Motion=Eastward, Season=Aug-Sep, Speed=Fast(>30)}",3,3792,0.0506
+"{Era=1950-1989, Speed=Medium(15-30), Status=HU}",3,3783,0.0505
+"{Pressure=<980, Season=Aug-Sep, Status=HU}",3,3784,0.0505
+"{Basin=Atlantic, Pressure=>=1000, Speed=Medium(15-30)}",3,3771,0.0504
+"{Lat=>=35N, Motion=Eastward, Status=EX}",3,3758,0.0502
+"{Basin=Pacific, Pressure=>=1000, Speed=Slow(<15)}",3,3746,0.05
+"{Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",4,10440,0.1394
+"{Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",4,9796,0.1308
+"{Basin=Atlantic, Lat=15-25N, Motion=Westward, Season=Aug-Sep}",4,9105,0.1216
+"{Basin=Atlantic, Era=1851-1949, Motion=Westward, Season=Aug-Sep}",4,7805,0.1042
+"{Basin=Atlantic, Lat=15-25N, Motion=Westward, Speed=Medium(15-30)}",4,7581,0.1012
+"{Basin=Pacific, Lat=15-25N, Motion=Westward, Season=Aug-Sep}",4,7542,0.1007
+"{Basin=Pacific, Lat=15-25N, Motion=Westward, Speed=Medium(15-30)}",4,7347,0.0981
+"{Basin=Pacific, Era=1950-1989, Lat=15-25N, Motion=Westward}",4,6887,0.092
+"{Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Status=TS}",4,6829,0.0912
+"{Basin=Pacific, Era=1990-2015, Lat=15-25N, Motion=Westward}",4,6769,0.0904
+"{Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Status=HU}",4,6747,0.0901
+"{Era=1950-1989, Lat=15-25N, Motion=Westward, Season=Aug-Sep}",4,6686,0.0893
+"{Basin=Atlantic, Era=1851-1949, Motion=Westward, Speed=Medium(15-30)}",4,6600,0.0881
+"{Lat=15-25N, Motion=Westward, Season=Aug-Sep, Status=TS}",4,6590,0.088
+"{Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=TS}",4,6469,0.0864
+"{Era=1950-1989, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",4,6422,0.0857
+"{Basin=Atlantic, Era=1851-1949, Season=Aug-Sep, Speed=Medium(15-30)}",4,6360,0.0849
+"{Basin=Pacific, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",4,6351,0.0848
+"{Lat=15-25N, Motion=Westward, Season=Aug-Sep, Status=HU}",4,6143,0.082
+"{Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=HU}",4,6111,0.0816
+"{Era=1950-1989, Lat=15-25N, Motion=Westward, Speed=Medium(15-30)}",4,6033,0.0806
+"{Basin=Pacific, Era=1950-1989, Motion=Westward, Speed=Medium(15-30)}",4,6040,0.0806
+"{Lat=15-25N, Motion=Westward, Speed=Medium(15-30), Status=TS}",4,6011,0.0803
+"{Basin=Atlantic, Era=1851-1949, Lat=15-25N, Motion=Westward}",4,5977,0.0798
+"{Basin=Pacific, Era=1990-2015, Motion=Westward, Speed=Medium(15-30)}",4,5968,0.0797
+"{Era=1990-2015, Lat=15-25N, Motion=Westward, Season=Aug-Sep}",4,5933,0.0792
+"{Basin=Pacific, Era=1990-2015, Motion=Westward, Pressure=>=1000}",4,5934,0.0792
+"{Basin=Atlantic, Lat=15-25N, Season=Aug-Sep, Speed=Medium(15-30)}",4,5890,0.0786
+"{Basin=Pacific, Lat=15-25N, Motion=Westward, Speed=Slow(<15)}",4,5784,0.0772
+"{Basin=Atlantic, Era=1851-1949, Motion=Westward, Status=TS}",4,5762,0.0769
+"{Basin=Pacific, Era=1990-2015, Motion=Westward, Season=Aug-Sep}",4,5755,0.0768
+"{Basin=Atlantic, Era=1950-1989, Motion=Westward, Season=Aug-Sep}",4,5725,0.0764
+"{Era=1990-2015, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",4,5714,0.0763
+"{Basin=Atlantic, Motion=Westward, Speed=Medium(15-30), Status=TS}",4,5650,0.0754
+"{Basin=Pacific, Era=1950-1989, Motion=Westward, Season=Aug-Sep}",4,5584,0.0746
+"{Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Slow(<15)}",4,5548,0.0741
+"{Basin=Atlantic, Era=1851-1949, Season=Aug-Sep, Status=HU}",4,5551,0.0741
+"{Basin=Pacific, Lat=15-25N, Motion=Westward, Status=TS}",4,5494,0.0734
+"{Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Speed=Slow(<15)}",4,5455,0.0728
+"{Basin=Atlantic, Season=Aug-Sep, Speed=Medium(15-30), Status=HU}",4,5452,0.0728
+"{Basin=Atlantic, Lat=15-25N, Motion=Westward, Status=TS}",4,5417,0.0723
+"{Era=1990-2015, Motion=Westward, Pressure=>=1000, Season=Aug-Sep}",4,5407,0.0722
+"{Lat=15-25N, Motion=Westward, Speed=Medium(15-30), Status=HU}",4,5392,0.072
+"{Basin=Atlantic, Lat=>=35N, Motion=Eastward, Season=Aug-Sep}",4,5376,0.0718
+"{Era=1990-2015, Lat=15-25N, Motion=Westward, Speed=Medium(15-30)}",4,5291,0.0706
+"{Basin=Atlantic, Era=1851-1949, Season=Aug-Sep, Status=TS}",4,5266,0.0703
+"{Era=1990-2015, Lat=15-25N, Motion=Westward, Pressure=>=1000}",4,5177,0.0691
+"{Basin=Atlantic, Lat=25-35N, Motion=Westward, Season=Aug-Sep}",4,5144,0.0687
+"{Basin=Atlantic, Season=Aug-Sep, Speed=Medium(15-30), Status=TS}",4,5044,0.0673
+"{Basin=Atlantic, Lat=>=35N, Motion=Eastward, Speed=Fast(>30)}",4,5007,0.0669
+"{Basin=Atlantic, Motion=Westward, Speed=Medium(15-30), Status=HU}",4,5001,0.0668
+"{Era=1990-2015, Motion=Westward, Pressure=>=1000, Speed=Medium(15-30)}",4,4904,0.0655
+"{Basin=Pacific, Motion=Westward, Speed=Medium(15-30), Status=TS}",4,4901,0.0654
+"{Basin=Atlantic, Era=1851-1949, Motion=Westward, Status=HU}",4,4762,0.0636
+"{Basin=Pacific, Era=1950-1989, Motion=Westward, Status=TS}",4,4759,0.0635
+"{Basin=Pacific, Era=1990-2015, Motion=Westward, Speed=Slow(<15)}",4,4727,0.0631
+"{Era=1851-1949, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",4,4655,0.0622
+"{Basin=Atlantic, Era=1851-1949, Speed=Medium(15-30), Status=TS}",4,4630,0.0618
+"{Basin=Pacific, Motion=Westward, Season=Aug-Sep, Status=TS}",4,4586,0.0612
+"{Basin=Atlantic, Era=1851-1949, Lat=25-35N, Season=Aug-Sep}",4,4566,0.061
+"{Basin=Atlantic, Era=1990-2015, Motion=Westward, Season=Aug-Sep}",4,4526,0.0604
+"{Basin=Atlantic, Lat=15-25N, Motion=Westward, Status=HU}",4,4496,0.06
+"{Basin=Pacific, Lat=15-25N, Motion=Westward, Season=Jan-Jul}",4,4497,0.06
+"{Basin=Pacific, Motion=Westward, Season=Aug-Sep, Speed=Slow(<15)}",4,4483,0.0599
+"{Basin=Atlantic, Era=1851-1949, Lat=15-25N, Season=Aug-Sep}",4,4449,0.0594
+"{Basin=Atlantic, Era=1950-1989, Season=Aug-Sep, Speed=Medium(15-30)}",4,4432,0.0592
+"{Basin=Pacific, Lat=15-25N, Motion=Westward, Status=HU}",4,4395,0.0587
+"{Basin=Atlantic, Era=1851-1949, Motion=Westward, Speed=Slow(<15)}",4,4349,0.0581
+"{Basin=Atlantic, Lat=25-35N, Season=Aug-Sep, Speed=Medium(15-30)}",4,4336,0.0579
+"{Basin=Atlantic, Era=1851-1949, Motion=Eastward, Season=Aug-Sep}",4,4319,0.0577
+"{Basin=Atlantic, Era=1950-1989, Motion=Westward, Speed=Medium(15-30)}",4,4303,0.0575
+"{Basin=Atlantic, Lat=15-25N, Motion=Westward, Speed=Slow(<15)}",4,4284,0.0572
+"{Basin=Pacific, Era=1950-1989, Lat=15-25N, Season=Aug-Sep}",4,4276,0.0571
+"{Basin=Pacific, Motion=Westward, Season=Jan-Jul, Speed=Medium(15-30)}",4,4258,0.0569
+"{Basin=Pacific, Lat=<15N, Motion=Westward, Speed=Medium(15-30)}",4,4265,0.0569
+"{Era=1950-1989, Lat=15-25N, Motion=Westward, Status=TS}",4,4240,0.0566
+"{Basin=Pacific, Lat=15-25N, Season=Aug-Sep, Speed=Medium(15-30)}",4,4216,0.0563
+"{Basin=Pacific, Era=1950-1989, Motion=Westward, Speed=Slow(<15)}",4,4196,0.056
+"{Basin=Atlantic, Lat=25-35N, Season=Aug-Sep, Speed=Slow(<15)}",4,4183,0.0559
+"{Era=1950-1989, Motion=Westward, Season=Aug-Sep, Status=TS}",4,4166,0.0556
+"{Lat=15-25N, Motion=Westward, Speed=Slow(<15), Status=TS}",4,4157,0.0555
+"{Basin=Pacific, Era=1990-2015, Lat=15-25N, Season=Aug-Sep}",4,4152,0.0554
+"{Basin=Pacific, Era=1990-2015, Lat=15-25N, Pressure=>=1000}",4,4118,0.055
+"{Basin=Atlantic, Lat=25-35N, Season=Aug-Sep, Status=HU}",4,4108,0.0549
+"{Era=1990-2015, Lat=15-25N, Motion=Westward, Speed=Slow(<15)}",4,4114,0.0549
+"{Basin=Pacific, Era=1950-1989, Lat=15-25N, Speed=Medium(15-30)}",4,4052,0.0541
+"{Basin=Pacific, Era=1990-2015, Motion=Westward, Status=TS}",4,4036,0.0539
+"{Era=1851-1949, Lat=15-25N, Motion=Westward, Season=Aug-Sep}",4,4028,0.0538
+"{Basin=Atlantic, Era=1851-1949, Speed=Medium(15-30), Status=HU}",4,4020,0.0537
+"{Lat=15-25N, Season=Aug-Sep, Speed=Medium(15-30), Status=TS}",4,4006,0.0535
+"{Era=1950-1989, Lat=15-25N, Season=Aug-Sep, Speed=Medium(15-30)}",4,4005,0.0535
+"{Basin=Atlantic, Era=1851-1949, Lat=15-25N, Speed=Medium(15-30)}",4,3995,0.0533
+"{Lat=15-25N, Season=Aug-Sep, Speed=Medium(15-30), Status=HU}",4,3978,0.0531
+"{Basin=Atlantic, Lat=15-25N, Season=Aug-Sep, Status=TS}",4,3956,0.0528
+"{Era=1950-1989, Lat=15-25N, Motion=Westward, Speed=Slow(<15)}",4,3956,0.0528
+"{Era=1990-2015, Motion=Westward, Pressure=>=1000, Speed=Slow(<15)}",4,3948,0.0527
+"{Basin=Pacific, Era=1990-2015, Lat=<15N, Motion=Westward}",4,3940,0.0526
+"{Basin=Atlantic, Era=1950-1989, Lat=15-25N, Motion=Westward}",4,3914,0.0523
+"{Motion=Westward, Season=Aug-Sep, Speed=Slow(<15), Status=TS}",4,3887,0.0519
+"{Era=1950-1989, Motion=Westward, Speed=Medium(15-30), Status=TS}",4,3885,0.0519
+"{Basin=Atlantic, Era=1851-1949, Lat=>=35N, Motion=Eastward}",4,3877,0.0518
+"{Basin=Atlantic, Era=1851-1949, Lat=25-35N, Motion=Westward}",4,3866,0.0516
+"{Lat=<15N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",4,3867,0.0516
+"{Basin=Pacific, Era=1950-1989, Motion=Westward, Season=Jan-Jul}",4,3846,0.0514
+"{Basin=Atlantic, Motion=Westward, Speed=Slow(<15), Status=TS}",4,3839,0.0513
+"{Basin=Atlantic, Era=1851-1949, Season=Aug-Sep, Speed=Slow(<15)}",4,3839,0.0513
+"{Basin=Atlantic, Era=1990-2015, Motion=Westward, Pressure=>=1000}",4,3812,0.0509
+"{Era=1990-2015, Motion=Westward, Pressure=>=1000, Status=TS}",4,3805,0.0508
+"{Basin=Atlantic, Lat=15-25N, Season=Aug-Sep, Status=HU}",4,3771,0.0504
+"{Basin=Atlantic, Era=1851-1949, Lat=15-25N, Status=TS}",4,3777,0.0504
+"{Basin=Pacific, Era=1990-2015, Lat=15-25N, Speed=Slow(<15)}",4,3773,0.0504
+"{Basin=Atlantic, Lat=25-35N, Motion=Westward, Speed=Medium(15-30)}",4,3765,0.0503
+"{Basin=Pacific, Lat=15-25N, Season=Aug-Sep, Speed=Slow(<15)}",4,3755,0.0501
+"{Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Status=TD}",4,3745,0.05
+"{Era=1990-2015, Motion=Westward, Season=Aug-Sep, Status=TS}",4,3747,0.05
+"{Basin=Atlantic, Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",5,5707,0.0762
+"{Basin=Atlantic, Era=1851-1949, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",5,4635,0.0619
+"{Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=HU}",5,4118,0.055
+"{Basin=Pacific, Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",5,4089,0.0546
+"{Basin=Atlantic, Era=1851-1949, Lat=15-25N, Motion=Westward, Season=Aug-Sep}",5,3996,0.0534
+"{Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=TS}",5,3886,0.0519
+"{Era=1950-1989, Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}",5,3890,0.0519
+"{Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=HU}",5,3882,0.0518
+"{Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=TS}",5,3869,0.0517
+"{Basin=Pacific, Era=1950-1989, Lat=15-25N, Motion=Westward, Season=Aug-Sep}",5,3826,0.0511
+"{Basin=Pacific, Era=1950-1989, Lat=15-25N, Motion=Westward, Speed=Medium(15-30)}",5,3829,0.0511

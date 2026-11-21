@@ -1,0 +1,298 @@
+{
+  "eps_km": 230.0,
+  "min_pts": 15,
+  "n_clusters": 2,
+  "noise": 379,
+  "noise_pct": 13.3,
+  "core": 2140,
+  "silhouette": 0.447,
+  "profiles": [
+    {
+      "Cluster": 0,
+      "storms": 1549,
+      "atlantic_pct": 100.0,
+      "lat_mean": 19.4,
+      "lon_mean": -66.2,
+      "lat_min": 8.0,
+      "lat_max": 35.5,
+      "lon_min": -98.0,
+      "lon_max": -16.0,
+      "peak_month": 9,
+      "mean_maxwind": 68.6,
+      "hurricane_pct": 50.1,
+      "major_pct": 18.5,
+      "landfall_pct": 36.9,
+      "median_duration_h": 132.0
+    },
+    {
+      "Cluster": 1,
+      "storms": 917,
+      "atlantic_pct": 0.4,
+      "lat_mean": 13.7,
+      "lon_mean": -105.7,
+      "lat_min": 7.8,
+      "lat_max": 22.0,
+      "lon_min": -127.7,
+      "lon_max": -89.0,
+      "peak_month": 7,
+      "mean_maxwind": 68.7,
+      "hurricane_pct": 50.5,
+      "major_pct": 20.3,
+      "landfall_pct": 7.4,
+      "median_duration_h": 132.0
+    }
+  ],
+  "grid": [
+    {
+      "eps_km": 138,
+      "MinPts": 10,
+      "clusters": 17,
+      "noise_%": 30.7
+    },
+    {
+      "eps_km": 138,
+      "MinPts": 15,
+      "clusters": 18,
+      "noise_%": 49.2
+    },
+    {
+      "eps_km": 138,
+      "MinPts": 25,
+      "clusters": 4,
+      "noise_%": 73.7
+    },
+    {
+      "eps_km": 184,
+      "MinPts": 10,
+      "clusters": 5,
+      "noise_%": 15.0
+    },
+    {
+      "eps_km": 184,
+      "MinPts": 15,
+      "clusters": 10,
+      "noise_%": 24.9
+    },
+    {
+      "eps_km": 184,
+      "MinPts": 25,
+      "clusters": 9,
+      "noise_%": 48.1
+    },
+    {
+      "eps_km": 230,
+      "MinPts": 10,
+      "clusters": 2,
+      "noise_%": 9.8
+    },
+    {
+      "eps_km": 230,
+      "MinPts": 15,
+      "clusters": 2,
+      "noise_%": 13.3
+    },
+    {
+      "eps_km": 230,
+      "MinPts": 25,
+      "clusters": 7,
+      "noise_%": 26.2
+    },
+    {
+      "eps_km": 276,
+      "MinPts": 10,
+      "clusters": 2,
+      "noise_%": 5.6
+    },
+    {
+      "eps_km": 276,
+      "MinPts": 15,
+      "clusters": 3,
+      "noise_%": 9.5
+    },
+    {
+      "eps_km": 276,
+      "MinPts": 25,
+      "clusters": 6,
+      "noise_%": 15.5
+    },
+    {
+      "eps_km": 345,
+      "MinPts": 10,
+      "clusters": 2,
+      "noise_%": 3.1
+    },
+    {
+      "eps_km": 345,
+      "MinPts": 15,
+      "clusters": 2,
+      "noise_%": 4.8
+    },
+    {
+      "eps_km": 345,
+      "MinPts": 25,
+      "clusters": 1,
+      "noise_%": 9.5
+    }
+  ],
+  "eps2_km": 150,
+  "sub_profiles": [
+    {
+      "SubCluster": "C0.0",
+      "storms": 226,
+      "lat_mean": 23.6,
+      "lon_mean": -90.4,
+      "peak_month": 9,
+      "mean_maxwind": 55.2,
+      "hurricane_pct": 31.0,
+      "major_pct": 4.9,
+      "landfall_pct": 63.3,
+      "median_duration_h": 84.0
+    },
+    {
+      "SubCluster": "C0.1",
+      "storms": 208,
+      "lat_mean": 16.2,
+      "lon_mean": -83.0,
+      "peak_month": 10,
+      "mean_maxwind": 66.1,
+      "hurricane_pct": 48.6,
+      "major_pct": 14.9,
+      "landfall_pct": 48.1,
+      "median_duration_h": 132.0
+    },
+    {
+      "SubCluster": "C0.10",
+      "storms": 13,
+      "lat_mean": 18.5,
+      "lon_mean": -60.2,
+      "peak_month": 8,
+      "mean_maxwind": 73.1,
+      "hurricane_pct": 61.5,
+      "major_pct": 23.1,
+      "landfall_pct": 23.1,
+      "median_duration_h": 204.0
+    },
+    {
+      "SubCluster": "C0.2",
+      "storms": 125,
+      "lat_mean": 27.6,
+      "lon_mean": -77.1,
+      "peak_month": 8,
+      "mean_maxwind": 57.8,
+      "hurricane_pct": 36.8,
+      "major_pct": 6.4,
+      "landfall_pct": 39.2,
+      "median_duration_h": 90.0
+    },
+    {
+      "SubCluster": "C0.3",
+      "storms": 96,
+      "lat_mean": 13.4,
+      "lon_mean": -58.7,
+      "peak_month": 8,
+      "mean_maxwind": 81.2,
+      "hurricane_pct": 63.5,
+      "major_pct": 34.4,
+      "landfall_pct": 41.7,
+      "median_duration_h": 183.0
+    },
+    {
+      "SubCluster": "C0.4",
+      "storms": 68,
+      "lat_mean": 13.0,
+      "lon_mean": -21.5,
+      "peak_month": 9,
+      "mean_maxwind": 80.7,
+      "hurricane_pct": 57.4,
+      "major_pct": 42.6,
+      "landfall_pct": 17.6,
+      "median_duration_h": 282.0
+    },
+    {
+      "SubCluster": "C0.5",
+      "storms": 32,
+      "lat_mean": 20.7,
+      "lon_mean": -68.6,
+      "peak_month": 10,
+      "mean_maxwind": 74.2,
+      "hurricane_pct": 65.6,
+      "major_pct": 25.0,
+      "landfall_pct": 34.4,
+      "median_duration_h": 168.0
+    },
+    {
+      "SubCluster": "C0.6",
+      "storms": 30,
+      "lat_mean": 11.7,
+      "lon_mean": -35.1,
+      "peak_month": 8,
+      "mean_maxwind": 78.3,
+      "hurricane_pct": 70.0,
+      "major_pct": 30.0,
+      "landfall_pct": 10.0,
+      "median_duration_h": 228.0
+    },
+    {
+      "SubCluster": "C0.7",
+      "storms": 29,
+      "lat_mean": 21.8,
+      "lon_mean": -72.3,
+      "peak_month": 10,
+      "mean_maxwind": 69.1,
+      "hurricane_pct": 51.7,
+      "major_pct": 10.3,
+      "landfall_pct": 27.6,
+      "median_duration_h": 138.0
+    },
+    {
+      "SubCluster": "C0.8",
+      "storms": 22,
+      "lat_mean": 13.4,
+      "lon_mean": -47.9,
+      "peak_month": 8,
+      "mean_maxwind": 74.5,
+      "hurricane_pct": 63.6,
+      "major_pct": 27.3,
+      "landfall_pct": 13.6,
+      "median_duration_h": 189.0
+    },
+    {
+      "SubCluster": "C0.9",
+      "storms": 15,
+      "lat_mean": 16.1,
+      "lon_mean": -54.9,
+      "peak_month": 8,
+      "mean_maxwind": 96.3,
+      "hurricane_pct": 86.7,
+      "major_pct": 46.7,
+      "landfall_pct": 33.3,
+      "median_duration_h": 210.0
+    },
+    {
+      "SubCluster": "C1.0",
+      "storms": 766,
+      "lat_mean": 13.9,
+      "lon_mean": -104.1,
+      "peak_month": 7,
+      "mean_maxwind": 69.5,
+      "hurricane_pct": 52.3,
+      "major_pct": 20.4,
+      "landfall_pct": 8.0,
+      "median_duration_h": 132.0
+    },
+    {
+      "SubCluster": "C1.1",
+      "storms": 20,
+      "lat_mean": 13.2,
+      "lon_mean": -117.4,
+      "peak_month": 9,
+      "mean_maxwind": 46.5,
+      "hurricane_pct": 10.0,
+      "major_pct": 5.0,
+      "landfall_pct": 0.0,
+      "median_duration_h": 105.0
+    }
+  ],
+  "noise_hu_pct": 41.7,
+  "noise_lat": 22.3
+}

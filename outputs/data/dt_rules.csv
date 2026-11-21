@@ -1,0 +1,17 @@
+rule,samples,confidence
+IF Latitude <= 39.0 AND 988.5 < Pressure <= 1002.5 THEN Status = TS,5202,0.835
+IF Latitude <= 38.8 AND Pressure <= 979.5 THEN Status = HU,3454,0.99
+IF Latitude <= 39.0 AND 1002.5 < Pressure <= 1005.5 THEN Status = TS,2287,0.664
+IF Latitude <= 35.0 AND Longitude <= -80.4 AND Pressure > 1005.5 THEN Status = TD,2142,0.887
+IF Latitude <= 34.5 AND Longitude > -80.4 AND Pressure > 1005.5 THEN Status = TD,1385,0.629
+IF 20.4 < Latitude <= 43.0 AND 979.5 < Pressure <= 988.5 THEN Status = HU,954,0.709
+IF Latitude <= 20.4 AND 979.5 < Pressure <= 988.5 THEN Status = HU,805,0.922
+IF Latitude > 43.0 AND 988.5 < Pressure <= 1005.5 THEN Status = EX,332,0.861
+IF Latitude > 34.5 AND Longitude > -80.4 AND Pressure > 1005.5 THEN Status = EX,276,0.54
+IF 39.0 < Latitude <= 43.0 AND 988.5 < Pressure <= 1005.5 THEN Status = EX,257,0.471
+IF Latitude > 50.1 AND Pressure <= 988.5 THEN Status = EX,160,1.0
+IF 38.8 < Latitude <= 43.0 AND Pressure <= 979.5 THEN Status = HU,121,0.744
+IF Latitude > 35.0 AND Longitude <= -80.4 AND Pressure > 1005.5 THEN Status = TD,66,0.53
+IF 43.0 < Latitude <= 47.1 AND Pressure <= 988.5 AND Heading <= 58.3 THEN Status = HU,60,0.4
+IF 43.0 < Latitude <= 47.1 AND Pressure <= 988.5 AND Heading > 58.3 THEN Status = EX,54,0.704
+IF 47.1 < Latitude <= 50.1 AND Pressure <= 988.5 THEN Status = EX,51,0.882

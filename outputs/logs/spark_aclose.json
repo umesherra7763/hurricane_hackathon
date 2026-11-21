@@ -1,0 +1,106 @@
+{
+  "results": [
+    {
+      "engine": "Python sequential",
+      "scale": 1,
+      "rows": 74895,
+      "seconds": 16.05,
+      "n_closed": 563
+    },
+    {
+      "engine": "Python sequential",
+      "scale": 2,
+      "rows": 149790,
+      "seconds": 25.12,
+      "n_closed": 563
+    },
+    {
+      "engine": "Python sequential",
+      "scale": 4,
+      "rows": 299580,
+      "seconds": 33.78,
+      "n_closed": 563
+    },
+    {
+      "engine": "Python sequential",
+      "scale": 8,
+      "rows": 599160,
+      "seconds": 67.36,
+      "n_closed": 563
+    },
+    {
+      "engine": "Spark local[8]",
+      "scale": 1,
+      "rows": 74895,
+      "seconds": 19.9,
+      "n_closed": 563,
+      "identical": true
+    },
+    {
+      "engine": "Spark local[8]",
+      "scale": 2,
+      "rows": 149790,
+      "seconds": 17.18,
+      "n_closed": 563,
+      "identical": true
+    },
+    {
+      "engine": "Spark local[8]",
+      "scale": 4,
+      "rows": 299580,
+      "seconds": 19.23,
+      "n_closed": 563,
+      "identical": true
+    },
+    {
+      "engine": "Spark local[8]",
+      "scale": 8,
+      "rows": 599160,
+      "seconds": 22.62,
+      "n_closed": 563,
+      "identical": true
+    },
+    {
+      "engine": "Spark local[8]",
+      "scale": 16,
+      "rows": 1198320,
+      "seconds": 28.89,
+      "n_closed": 563,
+      "identical": true
+    },
+    {
+      "engine": "Spark local[8]",
+      "scale": 32,
+      "rows": 2396640,
+      "seconds": 44.74,
+      "n_closed": 563,
+      "identical": true
+    }
+  ],
+  "speedup": {
+    "1": 0.81,
+    "2": 1.46,
+    "4": 1.76,
+    "8": 2.98
+  },
+  "core_scaling": [
+    {
+      "cores": 1,
+      "seconds": 42.46
+    },
+    {
+      "cores": 2,
+      "seconds": 32.21
+    },
+    {
+      "cores": 4,
+      "seconds": 30.73
+    },
+    {
+      "cores": 8,
+      "seconds": 27.72
+    }
+  ],
+  "cores": 8,
+  "base_rows": 74895
+}

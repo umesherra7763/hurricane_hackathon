@@ -1,0 +1,81 @@
+Loaded Atlantic:  49105 rows x 23 cols, 1814 storms
+Loaded Pacific :  26137 rows x 23 cols, 1050 storms
+Combined raw data: (75242, 23)
+
+================ (i) DATA CLEANING ================
+1. Stripped leading/trailing white-space from ID, Name, Event, Status (e.g. '            UNNAMED' -> 'UNNAMED', ' HU' -> 'HU').
+2. Sentinel values (-999, -99) replaced by NaN:
+     Maximum Wind        :    338 (  0.4 %)
+     Minimum Pressure    :  43473 ( 57.8 %)
+     Low Wind NE         :  62934 ( 83.6 %)
+     Low Wind SE         :  62934 ( 83.6 %)
+     Low Wind SW         :  62934 ( 83.6 %)
+     Low Wind NW         :  62934 ( 83.6 %)
+     Moderate Wind NE    :  62934 ( 83.6 %)
+     Moderate Wind SE    :  62934 ( 83.6 %)
+     Moderate Wind SW    :  62934 ( 83.6 %)
+     Moderate Wind NW    :  62934 ( 83.6 %)
+     High Wind NE        :  62934 ( 83.6 %)
+     High Wind SE        :  62934 ( 83.6 %)
+     High Wind SW        :  62934 ( 83.6 %)
+     High Wind NW        :  62934 ( 83.6 %)
+3. Latitude/Longitude strings (e.g. '28.0N','94.8W') converted to signed floats (S and W negative).
+4. Date+Time combined into a Datetime; unparsable timestamps: 0
+5. Exact duplicate rows removed: 0; duplicate (ID, Datetime) fixes removed: 0
+6. Status code harmonisation {'ET': 'EX', 'PT': 'EX', 'ST': 'HU'}; raw codes were {'TS': 27880, 'HU': 21303, 'TD': 16856, 'EX': 4908, 'LO': 2833, 'SS': 564, 'DB': 321, 'SD': 297, 'ET': 152, 'WV': 116, 'PT': 6, 'ST': 6}
+7. Out-of-range values set to NaN -> wind: 0, pressure: 0
+   Longitude outside +/-180 (repaired by wrapping into [-180,180]):
+      ID            Datetime  Latitude  Longitude
+AL051952 1952-09-14 06:00:00      43.2     -359.1
+AL051952 1952-09-14 12:00:00      44.0     -358.4
+   Latitude outside +/-90: 0. (Fixes up to 81N exist - extratropical remnants of AL091951 reaching the Arctic - and are genuine, so they are kept.)
+8. Rows with missing Maximum Wind dropped: 338. 19 storms (1967-68 Atlantic depressions, e.g. AL011967, AL021967, AL031967) had NO wind value at all and therefore disappear completely.
+9. Status/Wind contradictions (e.g. Status=HU but wind<64 kt): 7 -> removed as noisy records
+   examples:
+      ID            Datetime Status  Maximum Wind
+AL041946 1946-09-12 23:00:00     TS          65.0
+AL052005 2005-07-20 18:00:00     TS          70.0
+AL101958 1958-10-06 21:00:00     HU          60.0
+AL101958 1958-10-06 23:00:00     HU          60.0
+EP022012 2012-05-22 00:00:00     TD          35.0
+EP032013 2013-06-26 12:00:00     TS          65.0
+10. Fixes implying a translation speed > 150 km/h (position noise): 2 -> removed
+11. IQR outliers in Maximum Wind: 312 (fences -30.0 .. 130.0). Kept: these are genuine extreme storms (e.g. Patricia 2015, Wilma 2005), not errors.
+11. IQR outliers in Minimum Pressure: 1775 (fences 954.5 .. 1038.5). Kept: these are genuine extreme storms (e.g. Patricia 2015, Wilma 2005), not errors.
+
+After cleaning: 74895 rows, 2845 storms (0.46 % of rows removed)
+
+================ (ii) DATA SELECTION ================
+Missing % after cleaning:
+Maximum Wind         0.0
+Minimum Pressure    57.6
+Low Wind NE         83.6
+Low Wind SE         83.6
+Low Wind SW         83.6
+Low Wind NW         83.6
+Moderate Wind NE    83.6
+Moderate Wind SE    83.6
+Moderate Wind SW    83.6
+Moderate Wind NW    83.6
+High Wind NE        83.6
+High Wind SE        83.6
+High Wind SW        83.6
+High Wind NW        83.6
+-> 12 wind-radii columns are 83.6-83.6 % missing (only recorded since 2004) -> DROPPED.
+-> 'Date','Time' replaced by the derived 'Datetime'.
+-> 'Event' kept only as a binary 'Landfall' flag (it is blank for 98 % of rows).
+-> 'Minimum Pressure' kept (missing mostly before 1979) - used where available.
+Pearson r(Maximum Wind, Minimum Pressure) = -0.944 (strong inverse relation)
+Selected attributes (13): ['ID', 'Name', 'Basin', 'Datetime', 'Status', 'Latitude', 'Longitude', 'Maximum Wind', 'Minimum Pressure', 'Landfall', 'dt_h', 'step_km', 'Speed_kmh']
+
+================ (iii) DATA TRANSFORMATION ================
+a) Temporal features: Year, Month, Hour, Decade; unit conversion Wind kt -> km/h
+b) Discretisation: Wind -> Saffir-Simpson category {'TD': 33, 'TS': 63, 'Cat1': 82, 'Cat2': 95, 'Cat3': 112, 'Cat4': 136, 'Cat5': 999}
+c) Concept hierarchy: Status codes -> {'TD': 'TD', 'TS': 'TS', 'HU': 'HU', 'EX': 'EX', 'SD': 'SUB', 'SS': 'SUB', 'LO': 'LOW', 'WV': 'LOW', 'DB': 'LOW'}
+d) Derived dynamics: HoursSinceGenesis, dLat, dLon, dWind, Heading (deg), Speed_kmh
+e) Min-max normalisation of Wind, Latitude, Longitude to [0,1] (columns *_norm)
+Saved f:\4-1\Big_Data\hackathon\outputs\data\clean_tracks.csv  shape=(74895, 28)
+f) Aggregation to storm level -> f:\4-1\Big_Data\hackathon\outputs\data\storms.csv  shape=(2845, 18)
+g) 74895 transactions over 27 distinct items -> f:\4-1\Big_Data\hackathon\outputs\data\transactions.csv
+   items: Basin=Atlantic, Basin=Pacific, Era=1851-1949, Era=1950-1989, Era=1990-2015, Landfall=Yes, Lat=15-25N, Lat=25-35N, Lat=<15N, Lat=>=35N, Motion=Eastward, Motion=Westward, Pressure=980-999, Pressure=<980, Pressure=>=1000, Season=Aug-Sep, Season=Jan-Jul, Season=Oct-Dec, Speed=Fast(>30), Speed=Medium(15-30), Speed=Slow(<15), Status=EX, Status=HU, Status=LOW, Status=SUB, Status=TD, Status=TS
+   example transaction: Basin=Atlantic|Era=1851-1949|Lat=25-35N|Motion=Westward|Season=Aug-Sep|Speed=Slow(<15)|Status=TS

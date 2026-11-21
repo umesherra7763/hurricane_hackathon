@@ -1,0 +1,89 @@
+Train rows 17606, test rows 7759 (same storm-wise split as 05_decision_tree.py)
+
+Spark MLlib tree : {'accuracy': 0.8194, 'f1': 0.8188, 'weightedPrecision': 0.8185, 'weightedRecall': 0.8194}  (depth=8, nodes=137)
+scikit-learn tree: {'accuracy': 0.8085, 'f1': 0.8084}
+Spark confusion matrix:
+predicted    TD    TS    HU   EX
+actual                          
+TD         1397   303     2   35
+TS          340  2461   177  103
+HU            0   172  2165   37
+EX           47   158    27  335
+Spark feature importance:
+Pressure             0.7789
+Latitude             0.1242
+Longitude            0.0542
+HoursSinceGenesis    0.0217
+Month                0.0081
+dPressure6h          0.0072
+Heading              0.0048
+Speed_kmh            0.0009
+BasinCode            0.0000
+
+Spark tree rules (first 40 of 206 lines):
+DecisionTreeClassificationModel: uid=DecisionTreeClassifier_5295496a821d, depth=8, numNodes=137, numClasses=4, numFeatures=9
+  If (Pressure <= 989.5)
+   If (Latitude <= 43.55)
+    If (Pressure <= 987.5)
+     If (Pressure <= 979.5)
+      Predict: HU
+     Else (Pressure > 979.5)
+      If (Latitude <= 20.55)
+       Predict: HU
+      Else (Latitude > 20.55)
+       If (Longitude <= -36.75)
+        Predict: HU
+       Else (Longitude > -36.75)
+        If (HoursSinceGenesis <= 229.25)
+         Predict: HU
+        Else (HoursSinceGenesis > 229.25)
+         Predict: TS
+    Else (Pressure > 987.5)
+     If (Latitude <= 18.25)
+      If (Speed_kmh <= 20.397885170366635)
+       If (HoursSinceGenesis <= 84.75)
+        If (Latitude <= 14.850000000000001)
+         Predict: HU
+        Else (Latitude > 14.850000000000001)
+         Predict: TS
+       Else (HoursSinceGenesis > 84.75)
+        Predict: HU
+      Else (Speed_kmh > 20.397885170366635)
+       Predict: HU
+     Else (Latitude > 18.25)
+      If (Longitude <= -72.65)
+       If (Latitude <= 20.55)
+        Predict: TS
+       Else (Latitude > 20.55)
+        If (HoursSinceGenesis <= 120.5)
+         If (HoursSinceGenesis <= 66.5)
+          Predict: TS
+         Else (HoursSinceGenesis > 66.5)
+          Predict: HU
+        Else (HoursSinceGenesis > 120.5)
+x1    rows=   17,606  scikit-learn=   0.09s  Spark local[8]=   2.16s  speed-up= 0.04
+x5    rows=   88,030  scikit-learn=   0.28s  Spark local[8]=   2.02s  speed-up= 0.14
+x10   rows=  176,060  scikit-learn=   0.50s  Spark local[8]=   2.11s  speed-up= 0.24
+x25   rows=  440,150  scikit-learn=   1.55s  Spark local[8]=   2.69s  speed-up= 0.58
+x50   rows=  880,300  scikit-learn=   2.44s  Spark local[8]=   3.34s  speed-up= 0.73
+x100  rows=1,760,600  scikit-learn=   5.24s  Spark local[8]=   4.95s  speed-up= 1.06
+[core scaling] x100 (1,760,600 rows), local[1] -> 11.31s
+[core scaling] x100 (1,760,600 rows), local[2] -> 7.32s
+[core scaling] x100 (1,760,600 rows), local[4] -> 4.95s
+[core scaling] x100 (1,760,600 rows), local[8] -> 5.99s
+
+Core scaling:
+ cores  seconds  speedup_vs_1core
+     1    11.31              1.00
+     2     7.32              1.55
+     4     4.95              2.28
+     8     5.99              1.89
+
+Benchmark:
+ scale    rows  sklearn_s  spark_s  speedup
+     1   17606       0.09     2.16     0.04
+     5   88030       0.28     2.02     0.14
+    10  176060       0.50     2.11     0.24
+    25  440150       1.55     2.69     0.58
+    50  880300       2.44     3.34     0.73
+   100 1760600       5.24     4.95     1.06

@@ -1,0 +1,99 @@
+{
+  "n_rows": 25365,
+  "n_storms": 1269,
+  "train_rows": 17606,
+  "test_rows": 7759,
+  "class_dist": {
+    "TS": 10206,
+    "HU": 7798,
+    "TD": 5644,
+    "EX": 1717
+  },
+  "best_criterion": "gini",
+  "best_depth": 8,
+  "cv_acc": 0.8189,
+  "test_acc": 0.8098,
+  "macro_f1": 0.7818,
+  "weighted_f1": 0.8101,
+  "kappa": 0.7246,
+  "baseline": 0.4047,
+  "leaves": 125,
+  "fit_s": 0.136,
+  "small_acc": 0.8117,
+  "importance": {
+    "Pressure": 0.7568,
+    "Latitude": 0.1343,
+    "Longitude": 0.0596,
+    "HoursSinceGenesis": 0.0197,
+    "Month": 0.0103,
+    "dPressure6h": 0.008,
+    "Heading": 0.0064,
+    "Speed_kmh": 0.0039,
+    "BasinCode": 0.0011
+  },
+  "report": {
+    "TD": {
+      "precision": 0.7909571344685848,
+      "recall": 0.7754749568221071,
+      "f1-score": 0.7831395348837209,
+      "support": 1737.0
+    },
+    "TS": {
+      "precision": 0.7695421986919962,
+      "recall": 0.8020123336579033,
+      "f1-score": 0.7854418308963763,
+      "support": 3081.0
+    },
+    "HU": {
+      "precision": 0.9121357111787733,
+      "recall": 0.8833192923336142,
+      "f1-score": 0.8974962550823882,
+      "support": 2374.0
+    },
+    "EX": {
+      "precision": 0.673992673992674,
+      "recall": 0.6490299823633157,
+      "f1-score": 0.6612758310871518,
+      "support": 567.0
+    },
+    "accuracy": 0.8097693001675473,
+    "macro avg": {
+      "precision": 0.786656929583007,
+      "recall": 0.7774591412942351,
+      "f1-score": 0.7818383629874093,
+      "support": 7759.0
+    },
+    "weighted avg": {
+      "precision": 0.8109828690854785,
+      "recall": 0.8097693001675473,
+      "f1-score": 0.8101377959629801,
+      "support": 7759.0
+    }
+  },
+  "cm": [
+    [
+      1347,
+      356,
+      2,
+      32
+    ],
+    [
+      325,
+      2471,
+      180,
+      105
+    ],
+    [
+      0,
+      236,
+      2097,
+      41
+    ],
+    [
+      31,
+      148,
+      20,
+      368
+    ]
+  ]
+}

@@ -1,0 +1,139 @@
+=========== DESCRIPTIVE STATISTICS ===========
+             count    mean    std    min     25%      50%      75%      max   median    mode  skew  kurtosis    IQR
+Wind       74895.0   51.62  25.03   10.0   30.00    45.00    70.00   185.00    45.00    30.0  0.99      0.49  40.00
+Pressure   31765.0  993.40  18.75  872.0  986.00  1000.00  1007.00  1024.00  1000.00  1009.0 -1.61      2.63  21.00
+Latitude   74895.0   23.63   9.79    4.2   16.00    21.10    29.60    81.00    21.10    16.0  1.03      1.04  13.60
+Longitude  74895.0  -83.03  38.08 -180.0 -109.10   -81.40   -61.00   179.90   -81.40   -65.0  1.62     10.75  48.10
+Speed_kmh  72050.0   20.27  12.46    0.0   12.11    18.13    25.18   145.74    18.13     0.0  1.87      6.05  13.07
+
+Per-basin observation / storm counts:
+          observations  storms
+Basin                         
+Atlantic         48761    1795
+Pacific          26134    1050
+
+Storm-level summary:
+       MaxWind  MinPressure  DurationH  TrackKm
+count   2845.0       1571.0     2845.0   2845.0
+mean      67.8        978.6      150.1   3033.9
+std       29.5         24.6       96.5   2286.8
+min       20.0        872.0        0.0      0.0
+25%       45.0        963.0       78.0   1347.5
+50%       60.0        985.0      132.0   2476.6
+75%       90.0        999.0      204.0   4114.1
+max      185.0       1016.0      786.0  13902.0
+
+[1] Histogram of Maximum Wind
+   -> saved fig01_histogram_wind.png
+   skew=0.99, mode=30.0 kt, % obs < 64 kt = 70.8, % obs major (>=96 kt) = 6.3
+
+[2] Box plot of wind by status
+   -> saved fig02_boxplot_status.png
+              min   25%   50%   75%    max
+StatusGroup                               
+LOW          10.0  20.0  25.0  25.0   60.0
+TD           10.0  25.0  30.0  30.0   32.0
+SUB          10.0  30.0  40.0  50.0   70.0
+TS           35.0  40.0  45.0  50.0   60.0
+EX           10.0  35.0  45.0  55.0   95.0
+HU           65.0  70.0  80.0  95.0  185.0
+
+[3] Quantile plot of minimum pressure
+   -> saved fig03_quantile_pressure.png
+           0.10   0.25    0.50    0.75
+Basin                                 
+Atlantic  965.0  984.0   999.0  1006.0
+Pacific   970.0  990.0  1002.0  1007.0
+
+[4] Q-Q plot
+   -> saved fig04_qq_plot.png
+   mean(Pacific-Atlantic) at upper 20 % quantiles = 4.4 kt; lower 30 % = 1.3 kt; normal-QQ r = 0.973
+
+[5] Scatter plot wind vs pressure
+   -> saved fig05_scatter_wind_pressure.png
+   wind = 1389.3 + -1.347*P, r = -0.944, n = 31765
+
+[6] Scatter-plot matrix (storm level)
+   -> saved fig06_scatter_matrix.png
+
+[7] Correlation heat-map
+   -> saved fig07_correlation_heatmap.png
+                       MaxWind  MinPressure  DurationH  TrackKm  NumObs  GenesisLat  GenesisLon  Year  Max24hIntensification  Landfall
+MaxWind                   1.00        -0.95       0.61     0.58    0.61       -0.20        0.11 -0.11                   0.77      0.18
+MinPressure              -0.95         1.00      -0.60    -0.57   -0.61        0.24       -0.13  0.17                  -0.74     -0.16
+DurationH                 0.61        -0.60       1.00     0.85    1.00       -0.28        0.23  0.04                   0.46      0.09
+TrackKm                   0.58        -0.57       0.85     1.00    0.86       -0.21        0.39 -0.03                   0.41      0.12
+NumObs                    0.61        -0.61       1.00     0.86    1.00       -0.27        0.24  0.04                   0.47      0.12
+GenesisLat               -0.20         0.24      -0.28    -0.21   -0.27        1.00        0.19 -0.28                  -0.21      0.12
+GenesisLon                0.11        -0.13       0.23     0.39    0.24        0.19        1.00 -0.25                   0.01      0.07
+Year                     -0.11         0.17       0.04    -0.03    0.04       -0.28       -0.25  1.00                   0.16     -0.16
+Max24hIntensification     0.77        -0.74       0.46     0.41    0.47       -0.21        0.01  0.16                   1.00      0.15
+Landfall                  0.18        -0.16       0.09     0.12    0.12        0.12        0.07 -0.16                   0.15      1.00
+
+[8] Bar chart: storms by genesis month
+   -> saved fig08_bar_month.png
+GenesisMonth  1   2   3   4   5    6    7    8    9    10  11  12
+Basin                                                            
+Atlantic       3   1   1   5  36  115  163  432  601  340  84  14
+Pacific        1   0   1   0  40  131  233  251  226  138  27   2
+
+[9] Line chart: storms per year
+   -> saved fig09_line_yearly.png
+   Atlantic mean/yr 1851-1900 = 7.6; 1966-2015 = 16.2; busiest Atlantic year 2005 (31 storms); Pacific 1949-70 = 10.4, 1971-2015 = 18.2
+
+[10] Pie chart: status composition
+   -> saved fig10_pie_status.png
+{'TS': 37.2, 'HU': 28.4, 'TD': 22.1, 'EX': 6.8, 'LOW': 4.4, 'SUB': 1.1}
+
+[11] Violin plot: duration by max category
+   -> saved fig11_violin_duration.png
+MaxCategory
+TD       2.2
+TS       4.2
+Cat1     6.0
+Cat2     7.2
+Cat3     9.2
+Cat4    10.2
+Cat5    11.2
+
+[12] Track map
+   -> saved fig12_track_map.png
+   mean latitude of HU fixes = 24.0; 90th pct latitude of major fixes = 30.3
+
+[13] Parallel coordinates
+   -> saved fig13_parallel_coordinates.png
+             MaxWind  MinPressure  DurationH  TrackKm  GenesisLat
+MaxCategory                                                      
+Cat1            70.0        986.0      141.0   2740.0        16.0
+Cat3           105.0        958.0      246.0   5824.0        13.0
+Cat5           145.0        918.0      267.0   5665.0        12.0
+TS              50.0        998.0      120.0   1874.0        18.0
+
+[14] Hexbin density of genesis points
+   -> saved fig14_hexbin_genesis.png
+   median genesis lat {'Atlantic': 19.8, 'Pacific': 13.3}, lon {'Atlantic': -67.5, 'Pacific': -106.9}
+
+[15] Stacked bar: category mix by period
+   -> saved fig15_stacked_category.png
+MaxCategory         Cat1  Cat2  Cat3  Cat4  Cat5
+Basin    Period                                 
+Atlantic 1851-1900  40.8  36.3  17.9   5.0   0.0
+         1901-1950  35.5  28.9  17.8  14.5   3.3
+         1951-1980  41.3  20.1  18.4  14.5   5.6
+         1981-2000  43.1  19.8  15.5  18.1   3.4
+         2001-2015  42.2  13.8  17.4  19.3   7.3
+Pacific  1951-1980  59.1  13.5  12.9  13.5   1.2
+         1981-2000  33.5  15.5  19.0  28.5   3.5
+         2001-2015  37.5  15.6  15.6  24.2   7.0
+{'Atlantic 1851-1900': 22.9, 'Atlantic 1901-1950': 35.5, 'Atlantic 1951-1980': 38.5, 'Atlantic 1981-2000': 37.1, 'Atlantic 2001-2015': 44.0, 'Pacific 1951-1980': 27.5, 'Pacific 1981-2000': 51.0, 'Pacific 2001-2015': 46.9}
+
+Landfall % by basin: {'Atlantic': 32.9, 'Pacific': 6.4}
+Storms reaching hurricane %: {'Atlantic': 49.6, 'Pacific': 48.3}
+Storms becoming extratropical %: {'Atlantic': 37.8, 'Pacific': 9.0}
+Strongest storms:
+      ID     Name  Year  MaxWind  MinPressure
+EP202015 PATRICIA  2015    185.0        872.0
+AL041980    ALLEN  1980    165.0        899.0
+AL031935  UNNAMED  1935    160.0        892.0
+AL081988  GILBERT  1988    160.0        888.0
+AL252005    WILMA  2005    160.0        882.0

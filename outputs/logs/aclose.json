@@ -1,0 +1,18 @@
+{
+  "time_s": 15.79,
+  "passes": 6,
+  "n_generators": 563,
+  "n_closed": 563,
+  "closed_by_len": {
+    "1": 24,
+    "2": 156,
+    "3": 257,
+    "4": 115,
+    "5": 11
+  },
+  "level_i": 3,
+  "verified": true,
+  "n_frequent": 566,
+  "n_exact": 3,
+  "n_approx": 289
+}

@@ -1,0 +1,468 @@
+{
+  "desc": {
+    "Wind": {
+      "count": 74895.0,
+      "mean": 51.62,
+      "std": 25.03,
+      "min": 10.0,
+      "25%": 30.0,
+      "50%": 45.0,
+      "75%": 70.0,
+      "max": 185.0,
+      "median": 45.0,
+      "mode": 30.0,
+      "skew": 0.99,
+      "kurtosis": 0.49,
+      "IQR": 40.0
+    },
+    "Pressure": {
+      "count": 31765.0,
+      "mean": 993.4,
+      "std": 18.75,
+      "min": 872.0,
+      "25%": 986.0,
+      "50%": 1000.0,
+      "75%": 1007.0,
+      "max": 1024.0,
+      "median": 1000.0,
+      "mode": 1009.0,
+      "skew": -1.61,
+      "kurtosis": 2.63,
+      "IQR": 21.0
+    },
+    "Latitude": {
+      "count": 74895.0,
+      "mean": 23.63,
+      "std": 9.79,
+      "min": 4.2,
+      "25%": 16.0,
+      "50%": 21.1,
+      "75%": 29.6,
+      "max": 81.0,
+      "median": 21.1,
+      "mode": 16.0,
+      "skew": 1.03,
+      "kurtosis": 1.04,
+      "IQR": 13.6
+    },
+    "Longitude": {
+      "count": 74895.0,
+      "mean": -83.03,
+      "std": 38.08,
+      "min": -180.0,
+      "25%": -109.1,
+      "50%": -81.4,
+      "75%": -61.0,
+      "max": 179.9,
+      "median": -81.4,
+      "mode": -65.0,
+      "skew": 1.62,
+      "kurtosis": 10.75,
+      "IQR": 48.1
+    },
+    "Speed_kmh": {
+      "count": 72050.0,
+      "mean": 20.27,
+      "std": 12.46,
+      "min": 0.0,
+      "25%": 12.11,
+      "50%": 18.13,
+      "75%": 25.18,
+      "max": 145.74,
+      "median": 18.13,
+      "mode": 0.0,
+      "skew": 1.87,
+      "kurtosis": 6.05,
+      "IQR": 13.07
+    }
+  },
+  "storm_desc": {
+    "MaxWind": {
+      "count": 2845.0,
+      "mean": 67.8,
+      "std": 29.5,
+      "min": 20.0,
+      "25%": 45.0,
+      "50%": 60.0,
+      "75%": 90.0,
+      "max": 185.0
+    },
+    "MinPressure": {
+      "count": 1571.0,
+      "mean": 978.6,
+      "std": 24.6,
+      "min": 872.0,
+      "25%": 963.0,
+      "50%": 985.0,
+      "75%": 999.0,
+      "max": 1016.0
+    },
+    "DurationH": {
+      "count": 2845.0,
+      "mean": 150.1,
+      "std": 96.5,
+      "min": 0.0,
+      "25%": 78.0,
+      "50%": 132.0,
+      "75%": 204.0,
+      "max": 786.0
+    },
+    "TrackKm": {
+      "count": 2845.0,
+      "mean": 3033.9,
+      "std": 2286.8,
+      "min": 0.0,
+      "25%": 1347.5,
+      "50%": 2476.6,
+      "75%": 4114.1,
+      "max": 13902.0
+    }
+  },
+  "wind_skew": 0.99,
+  "wind_mode": 30.0,
+  "pct_below_64": 70.8,
+  "pct_major": 6.3,
+  "five_num": {
+    "LOW": {
+      "min": 10.0,
+      "25%": 20.0,
+      "50%": 25.0,
+      "75%": 25.0,
+      "max": 60.0
+    },
+    "TD": {
+      "min": 10.0,
+      "25%": 25.0,
+      "50%": 30.0,
+      "75%": 30.0,
+      "max": 32.0
+    },
+    "SUB": {
+      "min": 10.0,
+      "25%": 30.0,
+      "50%": 40.0,
+      "75%": 50.0,
+      "max": 70.0
+    },
+    "TS": {
+      "min": 35.0,
+      "25%": 40.0,
+      "50%": 45.0,
+      "75%": 50.0,
+      "max": 60.0
+    },
+    "EX": {
+      "min": 10.0,
+      "25%": 35.0,
+      "50%": 45.0,
+      "75%": 55.0,
+      "max": 95.0
+    },
+    "HU": {
+      "min": 65.0,
+      "25%": 70.0,
+      "50%": 80.0,
+      "75%": 95.0,
+      "max": 185.0
+    }
+  },
+  "ex_median": 45.0,
+  "pressure_quantiles": {
+    "Atlantic": {
+      "0.1": 965.0,
+      "0.25": 984.0,
+      "0.5": 999.0,
+      "0.75": 1006.0
+    },
+    "Pacific": {
+      "0.1": 970.0,
+      "0.25": 990.0,
+      "0.5": 1002.0,
+      "0.75": 1007.0
+    }
+  },
+  "qq_upper_diff": 4.4,
+  "qq_lower_diff": 1.3,
+  "normal_qq_r": 0.973,
+  "wp_slope": -1.347,
+  "wp_r": -0.944,
+  "wp_intercept": 1389.3,
+  "corr": {
+    "MaxWind": {
+      "MaxWind": 1.0,
+      "MinPressure": -0.95,
+      "DurationH": 0.61,
+      "TrackKm": 0.58,
+      "NumObs": 0.61,
+      "GenesisLat": -0.2,
+      "GenesisLon": 0.11,
+      "Year": -0.11,
+      "Max24hIntensification": 0.77,
+      "Landfall": 0.18
+    },
+    "MinPressure": {
+      "MaxWind": -0.95,
+      "MinPressure": 1.0,
+      "DurationH": -0.6,
+      "TrackKm": -0.57,
+      "NumObs": -0.61,
+      "GenesisLat": 0.24,
+      "GenesisLon": -0.13,
+      "Year": 0.17,
+      "Max24hIntensification": -0.74,
+      "Landfall": -0.16
+    },
+    "DurationH": {
+      "MaxWind": 0.61,
+      "MinPressure": -0.6,
+      "DurationH": 1.0,
+      "TrackKm": 0.85,
+      "NumObs": 1.0,
+      "GenesisLat": -0.28,
+      "GenesisLon": 0.23,
+      "Year": 0.04,
+      "Max24hIntensification": 0.46,
+      "Landfall": 0.09
+    },
+    "TrackKm": {
+      "MaxWind": 0.58,
+      "MinPressure": -0.57,
+      "DurationH": 0.85,
+      "TrackKm": 1.0,
+      "NumObs": 0.86,
+      "GenesisLat": -0.21,
+      "GenesisLon": 0.39,
+      "Year": -0.03,
+      "Max24hIntensification": 0.41,
+      "Landfall": 0.12
+    },
+    "NumObs": {
+      "MaxWind": 0.61,
+      "MinPressure": -0.61,
+      "DurationH": 1.0,
+      "TrackKm": 0.86,
+      "NumObs": 1.0,
+      "GenesisLat": -0.27,
+      "GenesisLon": 0.24,
+      "Year": 0.04,
+      "Max24hIntensification": 0.47,
+      "Landfall": 0.12
+    },
+    "GenesisLat": {
+      "MaxWind": -0.2,
+      "MinPressure": 0.24,
+      "DurationH": -0.28,
+      "TrackKm": -0.21,
+      "NumObs": -0.27,
+      "GenesisLat": 1.0,
+      "GenesisLon": 0.19,
+      "Year": -0.28,
+      "Max24hIntensification": -0.21,
+      "Landfall": 0.12
+    },
+    "GenesisLon": {
+      "MaxWind": 0.11,
+      "MinPressure": -0.13,
+      "DurationH": 0.23,
+      "TrackKm": 0.39,
+      "NumObs": 0.24,
+      "GenesisLat": 0.19,
+      "GenesisLon": 1.0,
+      "Year": -0.25,
+      "Max24hIntensification": 0.01,
+      "Landfall": 0.07
+    },
+    "Year": {
+      "MaxWind": -0.11,
+      "MinPressure": 0.17,
+      "DurationH": 0.04,
+      "TrackKm": -0.03,
+      "NumObs": 0.04,
+      "GenesisLat": -0.28,
+      "GenesisLon": -0.25,
+      "Year": 1.0,
+      "Max24hIntensification": 0.16,
+      "Landfall": -0.16
+    },
+    "Max24hIntensification": {
+      "MaxWind": 0.77,
+      "MinPressure": -0.74,
+      "DurationH": 0.46,
+      "TrackKm": 0.41,
+      "NumObs": 0.47,
+      "GenesisLat": -0.21,
+      "GenesisLon": 0.01,
+      "Year": 0.16,
+      "Max24hIntensification": 1.0,
+      "Landfall": 0.15
+    },
+    "Landfall": {
+      "MaxWind": 0.18,
+      "MinPressure": -0.16,
+      "DurationH": 0.09,
+      "TrackKm": 0.12,
+      "NumObs": 0.12,
+      "GenesisLat": 0.12,
+      "GenesisLon": 0.07,
+      "Year": -0.16,
+      "Max24hIntensification": 0.15,
+      "Landfall": 1.0
+    }
+  },
+  "month_counts": {
+    "Atlantic": {
+      "1": 3,
+      "2": 1,
+      "3": 1,
+      "4": 5,
+      "5": 36,
+      "6": 115,
+      "7": 163,
+      "8": 432,
+      "9": 601,
+      "10": 340,
+      "11": 84,
+      "12": 14
+    },
+    "Pacific": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 0,
+      "5": 40,
+      "6": 131,
+      "7": 233,
+      "8": 251,
+      "9": 226,
+      "10": 138,
+      "11": 27,
+      "12": 2
+    }
+  },
+  "peak_month_atl": 9,
+  "peak_month_pac": 8,
+  "atl_aug_oct_share": 76.5,
+  "pac_jul_sep_share": 67.6,
+  "atl_mean_1851_1900": 7.6,
+  "atl_mean_1966_2015": 16.2,
+  "pac_mean_1971_2015": 18.2,
+  "pac_mean_1949_1970": 10.4,
+  "max_year_atl": 2005,
+  "max_year_atl_n": 31,
+  "status_share": {
+    "TS": 37.2,
+    "HU": 28.4,
+    "TD": 22.1,
+    "EX": 6.8,
+    "LOW": 4.4,
+    "SUB": 1.1
+  },
+  "median_duration_by_cat": {
+    "TD": 2.2,
+    "TS": 4.2,
+    "Cat1": 6.0,
+    "Cat2": 7.2,
+    "Cat3": 9.2,
+    "Cat4": 10.2,
+    "Cat5": 11.2
+  },
+  "hu_lat_mean": 24.0,
+  "major_lat_p90": 30.3,
+  "pc_medians": {
+    "Cat1": {
+      "MaxWind": 70.0,
+      "MinPressure": 986.0,
+      "DurationH": 141.0,
+      "TrackKm": 2740.0,
+      "GenesisLat": 16.0
+    },
+    "Cat3": {
+      "MaxWind": 105.0,
+      "MinPressure": 958.0,
+      "DurationH": 246.0,
+      "TrackKm": 5824.0,
+      "GenesisLat": 13.0
+    },
+    "Cat5": {
+      "MaxWind": 145.0,
+      "MinPressure": 918.0,
+      "DurationH": 267.0,
+      "TrackKm": 5665.0,
+      "GenesisLat": 12.0
+    },
+    "TS": {
+      "MaxWind": 50.0,
+      "MinPressure": 998.0,
+      "DurationH": 120.0,
+      "TrackKm": 1874.0,
+      "GenesisLat": 18.0
+    }
+  },
+  "genesis_lat_median": {
+    "Atlantic": 19.8,
+    "Pacific": 13.3
+  },
+  "genesis_lon_median": {
+    "Atlantic": -67.5,
+    "Pacific": -106.9
+  },
+  "major_share_by_period": {
+    "Atlantic 1851-1900": 22.9,
+    "Atlantic 1901-1950": 35.5,
+    "Atlantic 1951-1980": 38.5,
+    "Atlantic 1981-2000": 37.1,
+    "Atlantic 2001-2015": 44.0,
+    "Pacific 1951-1980": 27.5,
+    "Pacific 1981-2000": 51.0,
+    "Pacific 2001-2015": 46.9
+  },
+  "landfall_by_basin": {
+    "Atlantic": 32.9,
+    "Pacific": 6.4
+  },
+  "hurricane_rate": {
+    "Atlantic": 49.6,
+    "Pacific": 48.3
+  },
+  "ex_rate": {
+    "Atlantic": 37.8,
+    "Pacific": 9.0
+  },
+  "top_storms": [
+    {
+      "ID": "EP202015",
+      "Name": "PATRICIA",
+      "Year": 2015,
+      "MaxWind": 185.0,
+      "MinPressure": 872.0
+    },
+    {
+      "ID": "AL041980",
+      "Name": "ALLEN",
+      "Year": 1980,
+      "MaxWind": 165.0,
+      "MinPressure": 899.0
+    },
+    {
+      "ID": "AL031935",
+      "Name": "UNNAMED",
+      "Year": 1935,
+      "MaxWind": 160.0,
+      "MinPressure": 892.0
+    },
+    {
+      "ID": "AL081988",
+      "Name": "GILBERT",
+      "Year": 1988,
+      "MaxWind": 160.0,
+      "MinPressure": 888.0
+    },
+    {
+      "ID": "AL252005",
+      "Name": "WILMA",
+      "Year": 2005,
+      "MaxWind": 160.0,
+      "MinPressure": 882.0
+    }
+  ]
+}

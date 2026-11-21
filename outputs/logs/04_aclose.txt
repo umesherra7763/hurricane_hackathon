@@ -1,0 +1,60 @@
+N = 74895 transactions, 27 items; min_support = 5% (count 3745), min_confidence = 70%
+   level 1: 27 candidates -> 24 frequent generators
+   level 2: 276 candidates -> 118 infrequent, 0 non-generators (same support as a subset), 158 generators
+   level 3: 533 candidates -> 275 infrequent, 2 non-generators (same support as a subset), 256 generators
+   level 4: 235 candidates -> 121 infrequent, 0 non-generators (same support as a subset), 114 generators
+   level 5: 17 candidates -> 6 infrequent, 0 non-generators (same support as a subset), 11 generators
+   first level with a non-generator: i = 3; computing closures of 539 generators (levels >= 2) in one pass
+
+A-CLOSE finished in 15.79 s using 6 database passes
+Generators: 563;  Closed frequent itemsets (CFIs): 563
+CFIs by size: {1: 24, 2: 156, 3: 257, 4: 115, 5: 11}
+Verification: closed itemsets derived from DIC/Apriori frequent itemsets = 563; A-CLOSE result identical = True
+Compression: 566 frequent itemsets are losslessly represented by 563 CFIs (0.5 % fewer)
+
+Largest closed frequent itemsets:
+                                                                       closed_itemset  size  support_count  support
+   {Basin=Atlantic, Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}     5           5707   0.0762
+{Basin=Atlantic, Era=1851-1949, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}     5           4635   0.0619
+    {Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=HU}     5           4118   0.0550
+    {Basin=Pacific, Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}     5           4089   0.0546
+         {Basin=Atlantic, Era=1851-1949, Lat=15-25N, Motion=Westward, Season=Aug-Sep}     5           3996   0.0534
+    {Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=TS}     5           3886   0.0519
+    {Era=1950-1989, Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}     5           3890   0.0519
+        {Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=HU}     5           3882   0.0518
+        {Lat=15-25N, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30), Status=TS}     5           3869   0.0517
+          {Basin=Pacific, Era=1950-1989, Lat=15-25N, Motion=Westward, Season=Aug-Sep}     5           3826   0.0511
+     {Basin=Pacific, Era=1950-1989, Lat=15-25N, Motion=Westward, Speed=Medium(15-30)}     5           3829   0.0511
+               {Basin=Atlantic, Motion=Westward, Season=Aug-Sep, Speed=Medium(15-30)}     4          10440   0.1394
+
+Generators whose closure is larger than themselves: 3 (first 10)
+                                  generator                                                     closure  support_count
+            {Era=1851-1949, Season=Oct-Dec}             {Basin=Atlantic, Era=1851-1949, Season=Oct-Dec}           6418
+                 {Era=1851-1949, Lat=>=35N}                  {Basin=Atlantic, Era=1851-1949, Lat=>=35N}           4454
+{Era=1851-1949, Lat=>=35N, Motion=Eastward} {Basin=Atlantic, Era=1851-1949, Lat=>=35N, Motion=Eastward}           3877
+
+Closed-itemset rule basis: 3 exact rules (conf = 100 %) + 289 approximate rules (conf >= 70%) = 292 rules (DIC produced 294 rules from all frequent itemsets)
+
+EXACT rules (100 % confidence), by support:
+                            IF (antecedent) THEN (consequent)  support  confidence  lift
+            {Era=1851-1949, Season=Oct-Dec}  {Basin=Atlantic}   0.0857         1.0 1.536
+                 {Era=1851-1949, Lat=>=35N}  {Basin=Atlantic}   0.0595         1.0 1.536
+{Era=1851-1949, Lat=>=35N, Motion=Eastward}  {Basin=Atlantic}   0.0518         1.0 1.536
+
+Top APPROXIMATE rules by lift:
+                                   IF (antecedent)                 THEN (consequent)  support  confidence  lift
+                      {Motion=Eastward, Status=EX}                       {Lat=>=35N}   0.0502      0.8635 6.425
+                                       {Status=EX}      {Lat=>=35N, Motion=Eastward}   0.0502      0.7421 6.405
+                       {Basin=Atlantic, Status=EX}                       {Lat=>=35N}   0.0550      0.8584 6.387
+                                       {Status=EX}       {Basin=Atlantic, Lat=>=35N}   0.0550      0.8130 6.129
+                                       {Status=EX}                       {Lat=>=35N}   0.0557      0.8231 6.124
+{Basin=Atlantic, Motion=Eastward, Speed=Fast(>30)}                       {Lat=>=35N}   0.0669      0.7557 5.622
+                {Motion=Eastward, Speed=Fast(>30)}       {Basin=Atlantic, Lat=>=35N}   0.0669      0.7348 5.539
+                {Motion=Eastward, Speed=Fast(>30)}                       {Lat=>=35N}   0.0673      0.7401 5.507
+                        {Era=1990-2015, Status=TD}                 {Pressure=>=1000}   0.0669      0.8708 3.857
+                      {Lat=>=35N, Speed=Fast(>30)} {Basin=Atlantic, Motion=Eastward}   0.0669      0.9550 3.849
+                        {Era=1851-1949, Lat=>=35N} {Basin=Atlantic, Motion=Eastward}   0.0518      0.8705 3.508
+                  {Motion=Westward, Pressure=<980}                       {Status=HU}   0.0549      0.9842 3.460
+      {Basin=Atlantic, Lat=>=35N, Speed=Fast(>30)}                 {Motion=Eastward}   0.0669      0.9621 3.449
+                      {Lat=>=35N, Speed=Fast(>30)}                 {Motion=Eastward}   0.0673      0.9619 3.448
+                                       {Lat=>=35N} {Basin=Atlantic, Motion=Eastward}   0.1146      0.8525 3.436

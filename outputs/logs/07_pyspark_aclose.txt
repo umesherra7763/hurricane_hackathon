@@ -1,0 +1,42 @@
+Base data: 74895 transactions, 27 items, min_support = 5%
+[sequential] x1   rows=   74,895  time=  16.05s  CFIs=563
+[sequential] x2   rows=  149,790  time=  25.12s  CFIs=563
+[sequential] x4   rows=  299,580  time=  33.78s  CFIs=563
+[sequential] x8   rows=  599,160  time=  67.36s  CFIs=563
+[spark 8 cores] x1   rows=   74,895  time=  19.90s  CFIs=563  identical to sequential = True
+[spark 8 cores] x2   rows=  149,790  time=  17.18s  CFIs=563  identical to sequential = True
+[spark 8 cores] x4   rows=  299,580  time=  19.23s  CFIs=563  identical to sequential = True
+[spark 8 cores] x8   rows=  599,160  time=  22.62s  CFIs=563  identical to sequential = True
+[spark 8 cores] x16  rows=1,198,320  time=  28.89s  CFIs=563  identical to sequential = True
+[spark 8 cores] x32  rows=2,396,640  time=  44.74s  CFIs=563  identical to sequential = True
+[core scaling] x8 data, local[1] -> 42.46s
+[core scaling] x8 data, local[2] -> 32.21s
+[core scaling] x8 data, local[4] -> 30.73s
+[core scaling] x8 data, local[8] -> 27.72s
+
+RESULTS
+           engine  scale    rows  seconds  n_closed identical
+Python sequential      1   74895    16.05       563       NaN
+Python sequential      2  149790    25.12       563       NaN
+Python sequential      4  299580    33.78       563       NaN
+Python sequential      8  599160    67.36       563       NaN
+   Spark local[8]      1   74895    19.90       563      True
+   Spark local[8]      2  149790    17.18       563      True
+   Spark local[8]      4  299580    19.23       563      True
+   Spark local[8]      8  599160    22.62       563      True
+   Spark local[8]     16 1198320    28.89       563      True
+   Spark local[8]     32 2396640    44.74       563      True
+
+Speed-up (sequential / Spark) by scale:
+scale
+1    0.81
+2    1.46
+4    1.76
+8    2.98
+
+Core scaling (x8 data):
+ cores  seconds  speedup_vs_1core
+     1    42.46              1.00
+     2    32.21              1.32
+     4    30.73              1.38
+     8    27.72              1.53

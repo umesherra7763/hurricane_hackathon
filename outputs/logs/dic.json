@@ -1,0 +1,21 @@
+{
+  "N": 74895,
+  "items": 27,
+  "min_count": 3745,
+  "time_s": 1.05,
+  "passes": 3.94,
+  "stops": 59,
+  "candidates": 1089,
+  "n_frequent": 566,
+  "by_len": {
+    "1": 24,
+    "2": 158,
+    "3": 258,
+    "4": 115,
+    "5": 11
+  },
+  "apriori_match": true,
+  "apriori_time_s": 0.59,
+  "max_k": 5,
+  "n_rules": 294
+}

@@ -1,0 +1,44 @@
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Base data: 74895 transactions, 27 items, min_support = 5%
+[sequential] x1   rows=   74,895  time=  14.99s  CFIs=563
+[sequential] x2   rows=  149,790  time=  29.97s  CFIs=563
+[sequential] x4   rows=  299,580  time=  66.74s  CFIs=563
+[sequential] x8   rows=  599,160  time= 118.78s  CFIs=563
+[spark 8 cores] x1   rows=   74,895  time=  29.44s  CFIs=563  identical to sequential = True
+[spark 8 cores] x2   rows=  149,790  time=  30.38s  CFIs=563  identical to sequential = True
+[spark 8 cores] x4   rows=  299,580  time=  40.07s  CFIs=563  identical to sequential = True
+[spark 8 cores] x8   rows=  599,160  time=  37.51s  CFIs=563  identical to sequential = True
+[spark 8 cores] x16  rows=1,198,320  time=  47.51s  CFIs=563  identical to sequential = True
+[spark 8 cores] x32  rows=2,396,640  time=  76.54s  CFIs=563  identical to sequential = True
+[core scaling] x8 data, local[1] -> 52.18s
+[core scaling] x8 data, local[2] -> 66.96s
+[core scaling] x8 data, local[4] -> 49.32s
+[core scaling] x8 data, local[8] -> 57.32s
+
+RESULTS
+           engine  scale    rows  seconds  n_closed identical
+Python sequential      1   74895    14.99       563       NaN
+Python sequential      2  149790    29.97       563       NaN
+Python sequential      4  299580    66.74       563       NaN
+Python sequential      8  599160   118.78       563       NaN
+   Spark local[8]      1   74895    29.44       563      True
+   Spark local[8]      2  149790    30.38       563      True
+   Spark local[8]      4  299580    40.07       563      True
+   Spark local[8]      8  599160    37.51       563      True
+   Spark local[8]     16 1198320    47.51       563      True
+   Spark local[8]     32 2396640    76.54       563      True
+
+Speed-up (sequential / Spark) by scale:
+scale
+1    0.51
+2    0.99
+4    1.67
+8    3.17
+
+Core scaling (x8 data):
+ cores  seconds  speedup_vs_1core
+     1    52.18              1.00
+     2    66.96              0.78
+     4    49.32              1.06
+     8    57.32              0.91
